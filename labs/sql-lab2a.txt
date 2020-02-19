@@ -1,0 +1,149 @@
+.headers on
+
+-- Name: Ryan Manchanthasouk
+-- File; sql-lab2a.sql-lab2a
+-- Date: January 21st, 2020
+-- 1 What are the regions?
+select * from region;
+RegionID|RegionDescription
+1|Eastern                                           
+2|Western                                           
+3|Northern                                          
+4|Southern
+-- 2 What are the cities?
+select TerritoryDescription from territories;
+TerritoryDescription
+TerritoryDescription
+Westboro
+Bedford
+Georgetow
+Boston
+Cambridge
+Braintree
+Providence
+Hollis
+Portsmouth
+Wilton
+Morristown
+Edison
+NewYork
+NewYork
+Mellvile
+Fairport
+Philadelphia
+Neward
+Rockville
+Greensboro
+Cary
+Columbia
+Atlanta
+Savannah
+Orlando
+Tampa
+Louisville
+Beachwood
+Findlay
+Southfield
+Troy
+BloomfieldHills
+Racine
+Roseville
+Minneapolis
+HoffmanEstates
+Chicago
+Bentonville
+Dallas
+Austin
+Denver
+ColoradoSprings
+Phoenix
+Scottsdale
+SantaMonica
+MenloPark
+SanFrancisco
+Campbell
+SantaClara
+SantaCruz
+Bellevue
+Redmond
+Seattle
+-- 3 What are the cities in the Southern region?
+select TerritoryDescription, RegionID from territories where RegionID = 4;
+TerritoryDescription|RegionID
+Columbia|4
+Atlanta|4
+Savannah|4
+Orlando|4
+Tampa|4
+Bentonville|4
+Dallas|4
+Austin|4
+-- 4 How do you run this query with the fully qualified column name?
+select territories.TerritoryDescription, territories.RegionID from territories where RegionID = 4;
+TerritoryDescription|RegionID
+Columbia|4
+Atlanta|4
+Savannah|4
+Orlando|4
+Tampa|4
+Bentonville|4
+Dallas|4
+Austin|4
+-- 5 How do you run this query with a table alias?
+select t.TerritoryDescription, t.RegionID from territories t where RegionID = 4;
+TerritoryDescription|RegionID
+Columbia|4
+Atlanta|4
+Savannah|4
+Orlando|4
+Tampa|4
+Bentonville|4
+Dallas|4
+Austin|4
+-- 6 What is the contact name, telephone number, and city for each customer?
+select contactname, phone, city from customers limit 5;
+ContactName|Phone|City
+ContactName|Phone|City
+Maria Anders|030-0074321|Berlin
+Ana Trujillo|(5) 555-4729|México D.F.
+Antonio Moreno|(5) 555-3932|México D.F.
+Thomas Hardy|(171) 555-7788|London
+-- 7 What are the products currently out of stock?
+select productid, productname, unitsinstock from products where unitsinstock = 0;
+ProductID|ProductName|UnitsInStock
+5|Chef Anton's Gumbo Mix|0
+17|Alice Mutton|0
+29|Thüringer Rostbratwurst|0
+31|Gorgonzola Telino|0
+53|Perth Pasties|0
+-- 8 What are the ten products currenly in stock with the least amount on hand?
+select productid, productname, unitsinstock from products where unitsinstock > 0 order by unitsinstock asc limit 10;
+ProductID|ProductName|UnitsInStock
+21|Sir Rodney's Scones|3
+66|Louisiana Hot Spiced Okra|4
+74|Longlife Tofu|4
+45|Rogede sild|5
+8|Northwoods Cranberry Sauce|6
+68|Scottish Longbreads|6
+32|Mascarpone Fabioli|9
+30|Nord-Ost Matjeshering|10
+49|Maxilaku|10
+37|Gravad lax|11
+-- 9 What are the five most expensive products in stock?
+select productid, productname, unitprice from products order by unitprice desc limit 5;
+ProductID|ProductName|UnitPrice
+38|Côte de Blaye|263.5
+29|Thüringer Rostbratwurst|123.79
+9|Mishi Kobe Niku|97.0
+20|Sir Rodney's Marmalade|81.0
+18|Carnarvon Tigers|62.5
+-- 10 How many products does Northwind have?  How many customers?  How many suppliers?
+select count(*) from products;
+count(*)
+77
+select count(*) from customers;
+count(*)
+92
+select count(*) from suppliers;
+count(*)
+29

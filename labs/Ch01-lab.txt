@@ -1,0 +1,1950 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20200113111147
+Username: LAPTOP-MPFVM1B3\ryanm
+RunAs User: LAPTOP-MPFVM1B3\ryanm
+Configuration Name: 
+Machine: LAPTOP-MPFVM1B3 (Microsoft Windows NT 10.0.18362.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 21172
+PSVersion: 5.1.18362.145
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.18362.145
+BuildVersion: 10.0.18362.145
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\ryanm\PowerShell_transcript.LAPTOP-MPFVM1B3.B_iRhu8r.20200113111147.txt
+PS C:\Users\ryanm> get-cmd
+get-cmd : The term 'get-cmd' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ get-cmd
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (get-cmd:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+get-cmd : The term 'get-cmd' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name,
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ get-cmd
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (get-cmd:String) [], CommandNo
+   tFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\ryanm> get-command
+
+CommandType     Name                                               Version
+-----------     ----                                               -------
+Alias           Add-AppPackage                                     2.0.1.0
+Alias           Add-AppPackageVolume                               2.0.1.0
+Alias           Add-AppProvisionedPackage                          3.0
+Alias           Add-ProvisionedAppPackage                          3.0
+Alias           Add-ProvisionedAppxPackage                         3.0
+Alias           Add-ProvisioningPackage                            3.0
+Alias           Add-TrustedProvisioningCertificate                 3.0
+Alias           Apply-WindowsUnattend                              3.0
+Alias           Disable-PhysicalDiskIndication                     2.0.0.0
+Alias           Disable-StorageDiagnosticLog                       2.0.0.0
+Alias           Dismount-AppPackageVolume                          2.0.1.0
+Alias           Enable-PhysicalDiskIndication                      2.0.0.0
+Alias           Enable-StorageDiagnosticLog                        2.0.0.0
+Alias           Flush-Volume                                       2.0.0.0
+Alias           Get-AppPackage                                     2.0.1.0
+Alias           Get-AppPackageDefaultVolume                        2.0.1.0
+Alias           Get-AppPackageLastError                            2.0.1.0
+Alias           Get-AppPackageLog                                  2.0.1.0
+Alias           Get-AppPackageManifest                             2.0.1.0
+Alias           Get-AppPackageVolume                               2.0.1.0
+Alias           Get-AppProvisionedPackage                          3.0
+Alias           Get-DiskSNV                                        2.0.0.0
+Alias           Get-PhysicalDiskSNV                                2.0.0.0
+Alias           Get-ProvisionedAppPackage                          3.0
+Alias           Get-ProvisionedAppxPackage                         3.0
+Alias           Get-StorageEnclosureSNV                            2.0.0.0
+Alias           Initialize-Volume                                  2.0.0.0
+Alias           Mount-AppPackageVolume                             2.0.1.0
+Alias           Move-AppPackage                                    2.0.1.0
+Alias           Move-SmbClient                                     2.0.0.0
+Alias           Optimize-AppProvisionedPackages                    3.0
+Alias           Optimize-ProvisionedAppPackages                    3.0
+Alias           Optimize-ProvisionedAppxPackages                   3.0
+Alias           Remove-AppPackage                                  2.0.1.0
+Alias           Remove-AppPackageVolume                            2.0.1.0
+Alias           Remove-AppProvisionedPackage                       3.0
+Alias           Remove-EtwTraceSession                             1.0.0.0
+Alias           Remove-ProvisionedAppPackage                       3.0
+Alias           Remove-ProvisionedAppxPackage                      3.0
+Alias           Remove-ProvisioningPackage                         3.0
+Alias           Remove-TrustedProvisioningCertificate              3.0
+Alias           Set-AppPackageDefaultVolume                        2.0.1.0
+Alias           Set-AppPackageProvisionedDataFile                  3.0
+Alias           Set-AutologgerConfig                               1.0.0.0
+Alias           Set-EtwTraceSession                                1.0.0.0
+Alias           Set-ProvisionedAppPackageDataFile                  3.0
+Alias           Set-ProvisionedAppXDataFile                        3.0
+Alias           Write-FileSystemCache                              2.0.0.0
+Function        A:
+Function        Add-BitLockerKeyProtector                          1.0.0.0
+Function        Add-DnsClientNrptRule                              1.0.0.0
+Function        Add-DtcClusterTMMapping                            1.0.0.0
+Function        Add-EtwTraceProvider                               1.0.0.0
+Function        Add-InitiatorIdToMaskingSet                        2.0.0.0
+Function        Add-MpPreference                                   1.0
+Function        Add-NetEventNetworkAdapter                         1.0.0.0
+Function        Add-NetEventPacketCaptureProvider                  1.0.0.0
+Function        Add-NetEventProvider                               1.0.0.0
+Function        Add-NetEventVFPProvider                            1.0.0.0
+Function        Add-NetEventVmNetworkAdapter                       1.0.0.0
+Function        Add-NetEventVmSwitch                               1.0.0.0
+Function        Add-NetEventVmSwitchProvider                       1.0.0.0
+Function        Add-NetEventWFPCaptureProvider                     1.0.0.0
+Function        Add-NetIPHttpsCertBinding                          1.0.0.0
+Function        Add-NetLbfoTeamMember                              2.0.0.0
+Function        Add-NetLbfoTeamNic                                 2.0.0.0
+Function        Add-NetNatExternalAddress                          1.0.0.0
+Function        Add-NetNatStaticMapping                            1.0.0.0
+Function        Add-NetSwitchTeamMember                            1.0.0.0
+Function        Add-OdbcDsn                                        1.0.0.0
+Function        Add-PartitionAccessPath                            2.0.0.0
+Function        Add-PhysicalDisk                                   2.0.0.0
+Function        Add-Printer                                        1.1
+Function        Add-PrinterDriver                                  1.1
+Function        Add-PrinterPort                                    1.1
+Function        Add-StorageFaultDomain                             2.0.0.0
+Function        Add-TargetPortToMaskingSet                         2.0.0.0
+Function        Add-VirtualDiskToMaskingSet                        2.0.0.0
+Function        Add-VpnConnection                                  2.0.0.0
+Function        Add-VpnConnectionRoute                             2.0.0.0
+Function        Add-VpnConnectionTriggerApplication                2.0.0.0
+Function        Add-VpnConnectionTriggerDnsConfiguration           2.0.0.0
+Function        Add-VpnConnectionTriggerTrustedNetwork             2.0.0.0
+Function        AfterAll                                           3.4.0
+Function        AfterEach                                          3.4.0
+Function        Assert-MockCalled                                  3.4.0
+Function        Assert-VerifiableMocks                             3.4.0
+Function        B:
+Function        Backup-BitLockerKeyProtector                       1.0.0.0
+Function        BackupToAAD-BitLockerKeyProtector                  1.0.0.0
+Function        BeforeAll                                          3.4.0
+Function        BeforeEach                                         3.4.0
+Function        Block-FileShareAccess                              2.0.0.0
+Function        Block-SmbShareAccess                               2.0.0.0
+Function        C:
+Function        cd..
+Function        cd\
+Function        Clear-BitLockerAutoUnlock                          1.0.0.0
+Function        Clear-Disk                                         2.0.0.0
+Function        Clear-DnsClientCache                               1.0.0.0
+Function        Clear-FileStorageTier                              2.0.0.0
+Function        Clear-Host
+Function        Clear-PcsvDeviceLog                                1.0.0.0
+Function        Clear-StorageBusDisk                               1.0.0.0
+Function        Clear-StorageDiagnosticInfo                        2.0.0.0
+Function        Close-SmbOpenFile                                  2.0.0.0
+Function        Close-SmbSession                                   2.0.0.0
+Function        Compress-Archive                                   1.0.1.0
+Function        Configuration                                      1.1
+Function        Connect-IscsiTarget                                1.0.0.0
+Function        Connect-VirtualDisk                                2.0.0.0
+Function        Context                                            3.4.0
+Function        ConvertFrom-SddlString                             3.1.0.0
+Function        Copy-NetFirewallRule                               2.0.0.0
+Function        Copy-NetIPsecMainModeCryptoSet                     2.0.0.0
+Function        Copy-NetIPsecMainModeRule                          2.0.0.0
+Function        Copy-NetIPsecPhase1AuthSet                         2.0.0.0
+Function        Copy-NetIPsecPhase2AuthSet                         2.0.0.0
+Function        Copy-NetIPsecQuickModeCryptoSet                    2.0.0.0
+Function        Copy-NetIPsecRule                                  2.0.0.0
+Function        D:
+Function        Debug-FileShare                                    2.0.0.0
+Function        Debug-MMAppPrelaunch                               1.0
+Function        Debug-StorageSubSystem                             2.0.0.0
+Function        Debug-Volume                                       2.0.0.0
+Function        Describe                                           3.4.0
+Function        Disable-BitLocker                                  1.0.0.0
+Function        Disable-BitLockerAutoUnlock                        1.0.0.0
+Function        Disable-DAManualEntryPointSelection                1.0.0.0
+Function        Disable-DscDebug                                   1.1
+Function        Disable-MMAgent                                    1.0
+Function        Disable-NetAdapter                                 2.0.0.0
+Function        Disable-NetAdapterBinding                          2.0.0.0
+Function        Disable-NetAdapterChecksumOffload                  2.0.0.0
+Function        Disable-NetAdapterEncapsulatedPacketTaskOffload    2.0.0.0
+Function        Disable-NetAdapterIPsecOffload                     2.0.0.0
+Function        Disable-NetAdapterLso                              2.0.0.0
+Function        Disable-NetAdapterPacketDirect                     2.0.0.0
+Function        Disable-NetAdapterPowerManagement                  2.0.0.0
+Function        Disable-NetAdapterQos                              2.0.0.0
+Function        Disable-NetAdapterRdma                             2.0.0.0
+Function        Disable-NetAdapterRsc                              2.0.0.0
+Function        Disable-NetAdapterRss                              2.0.0.0
+Function        Disable-NetAdapterSriov                            2.0.0.0
+Function        Disable-NetAdapterUso                              2.0.0.0
+Function        Disable-NetAdapterVmq                              2.0.0.0
+Function        Disable-NetDnsTransitionConfiguration              1.0.0.0
+Function        Disable-NetFirewallRule                            2.0.0.0
+Function        Disable-NetIPHttpsProfile                          1.0.0.0
+Function        Disable-NetIPsecMainModeRule                       2.0.0.0
+Function        Disable-NetIPsecRule                               2.0.0.0
+Function        Disable-NetNatTransitionConfiguration              1.0.0.0
+Function        Disable-NetworkSwitchEthernetPort                  1.0.0.0
+Function        Disable-NetworkSwitchFeature                       1.0.0.0
+Function        Disable-NetworkSwitchVlan                          1.0.0.0
+Function        Disable-OdbcPerfCounter                            1.0.0.0
+Function        Disable-PhysicalDiskIdentification                 2.0.0.0
+Function        Disable-PnpDevice                                  1.0.0.0
+Function        Disable-PSTrace                                    1.0.0.0
+Function        Disable-PSWSManCombinedTrace                       1.0.0.0
+Function        Disable-ScheduledTask                              1.0.0.0
+Function        Disable-SmbDelegation                              2.0.0.0
+Function        Disable-StorageBusCache                            1.0.0.0
+Function        Disable-StorageBusDisk                             1.0.0.0
+Function        Disable-StorageEnclosureIdentification             2.0.0.0
+Function        Disable-StorageEnclosurePower                      2.0.0.0
+Function        Disable-StorageHighAvailability                    2.0.0.0
+Function        Disable-StorageMaintenanceMode                     2.0.0.0
+Function        Disable-WdacBidTrace                               1.0.0.0
+Function        Disable-WSManTrace                                 1.0.0.0
+Function        Disconnect-IscsiTarget                             1.0.0.0
+Function        Disconnect-VirtualDisk                             2.0.0.0
+Function        Dismount-DiskImage                                 2.0.0.0
+Function        E:
+Function        Enable-BitLocker                                   1.0.0.0
+Function        Enable-BitLockerAutoUnlock                         1.0.0.0
+Function        Enable-DAManualEntryPointSelection                 1.0.0.0
+Function        Enable-DscDebug                                    1.1
+Function        Enable-MMAgent                                     1.0
+Function        Enable-NetAdapter                                  2.0.0.0
+Function        Enable-NetAdapterBinding                           2.0.0.0
+Function        Enable-NetAdapterChecksumOffload                   2.0.0.0
+Function        Enable-NetAdapterEncapsulatedPacketTaskOffload     2.0.0.0
+Function        Enable-NetAdapterIPsecOffload                      2.0.0.0
+Function        Enable-NetAdapterLso                               2.0.0.0
+Function        Enable-NetAdapterPacketDirect                      2.0.0.0
+Function        Enable-NetAdapterPowerManagement                   2.0.0.0
+Function        Enable-NetAdapterQos                               2.0.0.0
+Function        Enable-NetAdapterRdma                              2.0.0.0
+Function        Enable-NetAdapterRsc                               2.0.0.0
+Function        Enable-NetAdapterRss                               2.0.0.0
+Function        Enable-NetAdapterSriov                             2.0.0.0
+Function        Enable-NetAdapterUso                               2.0.0.0
+Function        Enable-NetAdapterVmq                               2.0.0.0
+Function        Enable-NetDnsTransitionConfiguration               1.0.0.0
+Function        Enable-NetFirewallRule                             2.0.0.0
+Function        Enable-NetIPHttpsProfile                           1.0.0.0
+Function        Enable-NetIPsecMainModeRule                        2.0.0.0
+Function        Enable-NetIPsecRule                                2.0.0.0
+Function        Enable-NetNatTransitionConfiguration               1.0.0.0
+Function        Enable-NetworkSwitchEthernetPort                   1.0.0.0
+Function        Enable-NetworkSwitchFeature                        1.0.0.0
+Function        Enable-NetworkSwitchVlan                           1.0.0.0
+Function        Enable-OdbcPerfCounter                             1.0.0.0
+Function        Enable-PhysicalDiskIdentification                  2.0.0.0
+Function        Enable-PnpDevice                                   1.0.0.0
+Function        Enable-PSTrace                                     1.0.0.0
+Function        Enable-PSWSManCombinedTrace                        1.0.0.0
+Function        Enable-ScheduledTask                               1.0.0.0
+Function        Enable-SmbDelegation                               2.0.0.0
+Function        Enable-StorageBusCache                             1.0.0.0
+Function        Enable-StorageBusDisk                              1.0.0.0
+Function        Enable-StorageEnclosureIdentification              2.0.0.0
+Function        Enable-StorageEnclosurePower                       2.0.0.0
+Function        Enable-StorageHighAvailability                     2.0.0.0
+Function        Enable-StorageMaintenanceMode                      2.0.0.0
+Function        Enable-WdacBidTrace                                1.0.0.0
+Function        Enable-WSManTrace                                  1.0.0.0
+Function        Expand-Archive                                     1.0.1.0
+Function        Export-ODataEndpointProxy                          1.0
+Function        Export-ScheduledTask                               1.0.0.0
+Function        F:
+Function        Find-Command                                       1.0.0.1
+Function        Find-DscResource                                   1.0.0.1
+Function        Find-Module                                        1.0.0.1
+Function        Find-NetIPsecRule                                  2.0.0.0
+Function        Find-NetRoute                                      1.0.0.0
+Function        Find-RoleCapability                                1.0.0.1
+Function        Find-Script                                        1.0.0.1
+Function        Flush-EtwTraceSession                              1.0.0.0
+Function        Format-Hex                                         3.1.0.0
+Function        Format-Volume                                      2.0.0.0
+Function        G:
+Function        Get-AppBackgroundTask                              1.0.0.0
+Function        Get-AppxLastError                                  2.0.1.0
+Function        Get-AppxLog                                        2.0.1.0
+Function        Get-AutologgerConfig                               1.0.0.0
+Function        Get-BitLockerVolume                                1.0.0.0
+Function        Get-ClusteredScheduledTask                         1.0.0.0
+Function        Get-DAClientExperienceConfiguration                1.0.0.0
+Function        Get-DAConnectionStatus                             1.0.0.0
+Function        Get-DAEntryPointTableItem                          1.0.0.0
+Function        Get-DedupProperties                                2.0.0.0
+Function        Get-Disk                                           2.0.0.0
+Function        Get-DiskImage                                      2.0.0.0
+Function        Get-DiskStorageNodeView                            2.0.0.0
+Function        Get-DnsClient                                      1.0.0.0
+Function        Get-DnsClientCache                                 1.0.0.0
+Function        Get-DnsClientGlobalSetting                         1.0.0.0
+Function        Get-DnsClientNrptGlobal                            1.0.0.0
+Function        Get-DnsClientNrptPolicy                            1.0.0.0
+Function        Get-DnsClientNrptRule                              1.0.0.0
+Function        Get-DnsClientServerAddress                         1.0.0.0
+Function        Get-DscConfiguration                               1.1
+Function        Get-DscConfigurationStatus                         1.1
+Function        Get-DscLocalConfigurationManager                   1.1
+Function        Get-DscResource                                    1.1
+Function        Get-Dtc                                            1.0.0.0
+Function        Get-DtcAdvancedHostSetting                         1.0.0.0
+Function        Get-DtcAdvancedSetting                             1.0.0.0
+Function        Get-DtcClusterDefault                              1.0.0.0
+Function        Get-DtcClusterTMMapping                            1.0.0.0
+Function        Get-DtcDefault                                     1.0.0.0
+Function        Get-DtcLog                                         1.0.0.0
+Function        Get-DtcNetworkSetting                              1.0.0.0
+Function        Get-DtcTransaction                                 1.0.0.0
+Function        Get-DtcTransactionsStatistics                      1.0.0.0
+Function        Get-DtcTransactionsTraceSession                    1.0.0.0
+Function        Get-DtcTransactionsTraceSetting                    1.0.0.0
+Function        Get-EtwTraceProvider                               1.0.0.0
+Function        Get-EtwTraceSession                                1.0.0.0
+Function        Get-FileHash                                       3.1.0.0
+Function        Get-FileIntegrity                                  2.0.0.0
+Function        Get-FileShare                                      2.0.0.0
+Function        Get-FileShareAccessControlEntry                    2.0.0.0
+Function        Get-FileStorageTier                                2.0.0.0
+Function        Get-InitiatorId                                    2.0.0.0
+Function        Get-InitiatorPort                                  2.0.0.0
+Function        Get-InstalledModule                                1.0.0.1
+Function        Get-InstalledScript                                1.0.0.1
+Function        Get-IscsiConnection                                1.0.0.0
+Function        Get-IscsiSession                                   1.0.0.0
+Function        Get-IscsiTarget                                    1.0.0.0
+Function        Get-IscsiTargetPortal                              1.0.0.0
+Function        Get-IseSnippet                                     1.0.0.0
+Function        Get-LogProperties                                  1.0.0.0
+Function        Get-MaskingSet                                     2.0.0.0
+Function        Get-MMAgent                                        1.0
+Function        Get-MockDynamicParameters                          3.4.0
+Function        Get-MpComputerStatus                               1.0
+Function        Get-MpPreference                                   1.0
+Function        Get-MpThreat                                       1.0
+Function        Get-MpThreatCatalog                                1.0
+Function        Get-MpThreatDetection                              1.0
+Function        Get-NCSIPolicyConfiguration                        1.0.0.0
+Function        Get-Net6to4Configuration                           1.0.0.0
+Function        Get-NetAdapter                                     2.0.0.0
+Function        Get-NetAdapterAdvancedProperty                     2.0.0.0
+Function        Get-NetAdapterBinding                              2.0.0.0
+Function        Get-NetAdapterChecksumOffload                      2.0.0.0
+Function        Get-NetAdapterEncapsulatedPacketTaskOffload        2.0.0.0
+Function        Get-NetAdapterHardwareInfo                         2.0.0.0
+Function        Get-NetAdapterIPsecOffload                         2.0.0.0
+Function        Get-NetAdapterLso                                  2.0.0.0
+Function        Get-NetAdapterPacketDirect                         2.0.0.0
+Function        Get-NetAdapterPowerManagement                      2.0.0.0
+Function        Get-NetAdapterQos                                  2.0.0.0
+Function        Get-NetAdapterRdma                                 2.0.0.0
+Function        Get-NetAdapterRsc                                  2.0.0.0
+Function        Get-NetAdapterRss                                  2.0.0.0
+Function        Get-NetAdapterSriov                                2.0.0.0
+Function        Get-NetAdapterSriovVf                              2.0.0.0
+Function        Get-NetAdapterStatistics                           2.0.0.0
+Function        Get-NetAdapterUso                                  2.0.0.0
+Function        Get-NetAdapterVmq                                  2.0.0.0
+Function        Get-NetAdapterVMQQueue                             2.0.0.0
+Function        Get-NetAdapterVPort                                2.0.0.0
+Function        Get-NetCompartment                                 1.0.0.0
+Function        Get-NetConnectionProfile                           1.0.0.0
+Function        Get-NetDnsTransitionConfiguration                  1.0.0.0
+Function        Get-NetDnsTransitionMonitoring                     1.0.0.0
+Function        Get-NetEventNetworkAdapter                         1.0.0.0
+Function        Get-NetEventPacketCaptureProvider                  1.0.0.0
+Function        Get-NetEventProvider                               1.0.0.0
+Function        Get-NetEventSession                                1.0.0.0
+Function        Get-NetEventVFPProvider                            1.0.0.0
+Function        Get-NetEventVmNetworkAdapter                       1.0.0.0
+Function        Get-NetEventVmSwitch                               1.0.0.0
+Function        Get-NetEventVmSwitchProvider                       1.0.0.0
+Function        Get-NetEventWFPCaptureProvider                     1.0.0.0
+Function        Get-NetFirewallAddressFilter                       2.0.0.0
+Function        Get-NetFirewallApplicationFilter                   2.0.0.0
+Function        Get-NetFirewallInterfaceFilter                     2.0.0.0
+Function        Get-NetFirewallInterfaceTypeFilter                 2.0.0.0
+Function        Get-NetFirewallPortFilter                          2.0.0.0
+Function        Get-NetFirewallProfile                             2.0.0.0
+Function        Get-NetFirewallRule                                2.0.0.0
+Function        Get-NetFirewallSecurityFilter                      2.0.0.0
+Function        Get-NetFirewallServiceFilter                       2.0.0.0
+Function        Get-NetFirewallSetting                             2.0.0.0
+Function        Get-NetIPAddress                                   1.0.0.0
+Function        Get-NetIPConfiguration                             1.0.0.0
+Function        Get-NetIPHttpsConfiguration                        1.0.0.0
+Function        Get-NetIPHttpsState                                1.0.0.0
+Function        Get-NetIPInterface                                 1.0.0.0
+Function        Get-NetIPsecDospSetting                            2.0.0.0
+Function        Get-NetIPsecMainModeCryptoSet                      2.0.0.0
+Function        Get-NetIPsecMainModeRule                           2.0.0.0
+Function        Get-NetIPsecMainModeSA                             2.0.0.0
+Function        Get-NetIPsecPhase1AuthSet                          2.0.0.0
+Function        Get-NetIPsecPhase2AuthSet                          2.0.0.0
+Function        Get-NetIPsecQuickModeCryptoSet                     2.0.0.0
+Function        Get-NetIPsecQuickModeSA                            2.0.0.0
+Function        Get-NetIPsecRule                                   2.0.0.0
+Function        Get-NetIPv4Protocol                                1.0.0.0
+Function        Get-NetIPv6Protocol                                1.0.0.0
+Function        Get-NetIsatapConfiguration                         1.0.0.0
+Function        Get-NetLbfoTeam                                    2.0.0.0
+Function        Get-NetLbfoTeamMember                              2.0.0.0
+Function        Get-NetLbfoTeamNic                                 2.0.0.0
+Function        Get-NetNat                                         1.0.0.0
+Function        Get-NetNatExternalAddress                          1.0.0.0
+Function        Get-NetNatGlobal                                   1.0.0.0
+Function        Get-NetNatSession                                  1.0.0.0
+Function        Get-NetNatStaticMapping                            1.0.0.0
+Function        Get-NetNatTransitionConfiguration                  1.0.0.0
+Function        Get-NetNatTransitionMonitoring                     1.0.0.0
+Function        Get-NetNeighbor                                    1.0.0.0
+Function        Get-NetOffloadGlobalSetting                        1.0.0.0
+Function        Get-NetPrefixPolicy                                1.0.0.0
+Function        Get-NetQosPolicy                                   2.0.0.0
+Function        Get-NetRoute                                       1.0.0.0
+Function        Get-NetSwitchTeam                                  1.0.0.0
+Function        Get-NetSwitchTeamMember                            1.0.0.0
+Function        Get-NetTCPConnection                               1.0.0.0
+Function        Get-NetTCPSetting                                  1.0.0.0
+Function        Get-NetTeredoConfiguration                         1.0.0.0
+Function        Get-NetTeredoState                                 1.0.0.0
+Function        Get-NetTransportFilter                             1.0.0.0
+Function        Get-NetUDPEndpoint                                 1.0.0.0
+Function        Get-NetUDPSetting                                  1.0.0.0
+Function        Get-NetworkSwitchEthernetPort                      1.0.0.0
+Function        Get-NetworkSwitchFeature                           1.0.0.0
+Function        Get-NetworkSwitchGlobalData                        1.0.0.0
+Function        Get-NetworkSwitchVlan                              1.0.0.0
+Function        Get-OdbcDriver                                     1.0.0.0
+Function        Get-OdbcDsn                                        1.0.0.0
+Function        Get-OdbcPerfCounter                                1.0.0.0
+Function        Get-OffloadDataTransferSetting                     2.0.0.0
+Function        Get-OperationValidation                            1.0.1
+Function        Get-Partition                                      2.0.0.0
+Function        Get-PartitionSupportedSize                         2.0.0.0
+Function        Get-PcsvDevice                                     1.0.0.0
+Function        Get-PcsvDeviceLog                                  1.0.0.0
+Function        Get-PhysicalDisk                                   2.0.0.0
+Function        Get-PhysicalDiskStorageNodeView                    2.0.0.0
+Function        Get-PhysicalExtent                                 2.0.0.0
+Function        Get-PhysicalExtentAssociation                      2.0.0.0
+Function        Get-PnpDevice                                      1.0.0.0
+Function        Get-PnpDeviceProperty                              1.0.0.0
+Function        Get-PrintConfiguration                             1.1
+Function        Get-Printer                                        1.1
+Function        Get-PrinterDriver                                  1.1
+Function        Get-PrinterPort                                    1.1
+Function        Get-PrinterProperty                                1.1
+Function        Get-PrintJob                                       1.1
+Function        Get-PSRepository                                   1.0.0.1
+Function        Get-ResiliencySetting                              2.0.0.0
+Function        Get-ScheduledTask                                  1.0.0.0
+Function        Get-ScheduledTaskInfo                              1.0.0.0
+Function        Get-SmbBandWidthLimit                              2.0.0.0
+Function        Get-SmbClientConfiguration                         2.0.0.0
+Function        Get-SmbClientNetworkInterface                      2.0.0.0
+Function        Get-SmbConnection                                  2.0.0.0
+Function        Get-SmbDelegation                                  2.0.0.0
+Function        Get-SmbGlobalMapping                               2.0.0.0
+Function        Get-SmbMapping                                     2.0.0.0
+Function        Get-SmbMultichannelConnection                      2.0.0.0
+Function        Get-SmbMultichannelConstraint                      2.0.0.0
+Function        Get-SmbOpenFile                                    2.0.0.0
+Function        Get-SmbServerConfiguration                         2.0.0.0
+Function        Get-SmbServerNetworkInterface                      2.0.0.0
+Function        Get-SmbSession                                     2.0.0.0
+Function        Get-SmbShare                                       2.0.0.0
+Function        Get-SmbShareAccess                                 2.0.0.0
+Function        Get-SmbWitnessClient                               2.0.0.0
+Function        Get-StartApps                                      1.0.0.0
+Function        Get-StorageAdvancedProperty                        2.0.0.0
+Function        Get-StorageBusBinding                              1.0.0.0
+Function        Get-StorageBusDisk                                 1.0.0.0
+Function        Get-StorageChassis                                 2.0.0.0
+Function        Get-StorageDiagnosticInfo                          2.0.0.0
+Function        Get-StorageEnclosure                               2.0.0.0
+Function        Get-StorageEnclosureStorageNodeView                2.0.0.0
+Function        Get-StorageEnclosureVendorData                     2.0.0.0
+Function        Get-StorageExtendedStatus                          2.0.0.0
+Function        Get-StorageFaultDomain                             2.0.0.0
+Function        Get-StorageFileServer                              2.0.0.0
+Function        Get-StorageFirmwareInformation                     2.0.0.0
+Function        Get-StorageHealthAction                            2.0.0.0
+Function        Get-StorageHealthReport                            2.0.0.0
+Function        Get-StorageHealthSetting                           2.0.0.0
+Function        Get-StorageHistory                                 2.0.0.0
+Function        Get-StorageJob                                     2.0.0.0
+Function        Get-StorageNode                                    2.0.0.0
+Function        Get-StoragePool                                    2.0.0.0
+Function        Get-StorageProvider                                2.0.0.0
+Function        Get-StorageRack                                    2.0.0.0
+Function        Get-StorageReliabilityCounter                      2.0.0.0
+Function        Get-StorageScaleUnit                               2.0.0.0
+Function        Get-StorageSetting                                 2.0.0.0
+Function        Get-StorageSite                                    2.0.0.0
+Function        Get-StorageSubSystem                               2.0.0.0
+Function        Get-StorageTier                                    2.0.0.0
+Function        Get-StorageTierSupportedSize                       2.0.0.0
+Function        Get-SupportedClusterSizes                          2.0.0.0
+Function        Get-SupportedFileSystems                           2.0.0.0
+Function        Get-TargetPort                                     2.0.0.0
+Function        Get-TargetPortal                                   2.0.0.0
+Function        Get-TestDriveItem                                  3.4.0
+Function        Get-Verb
+Function        Get-VirtualDisk                                    2.0.0.0
+Function        Get-VirtualDiskSupportedSize                       2.0.0.0
+Function        Get-Volume                                         2.0.0.0
+Function        Get-VolumeCorruptionCount                          2.0.0.0
+Function        Get-VolumeScrubPolicy                              2.0.0.0
+Function        Get-VpnConnection                                  2.0.0.0
+Function        Get-VpnConnectionTrigger                           2.0.0.0
+Function        Get-WdacBidTrace                                   1.0.0.0
+Function        Get-WindowsUpdateLog                               1.0.0.0
+Function        Get-WUAVersion                                     1.0.0.2
+Function        Get-WUIsPendingReboot                              1.0.0.2
+Function        Get-WULastInstallationDate                         1.0.0.2
+Function        Get-WULastScanSuccessDate                          1.0.0.2
+Function        Grant-FileShareAccess                              2.0.0.0
+Function        Grant-SmbShareAccess                               2.0.0.0
+Function        H:
+Function        help
+Function        Hide-VirtualDisk                                   2.0.0.0
+Function        I:
+Function        Import-IseSnippet                                  1.0.0.0
+Function        Import-PowerShellDataFile                          3.1.0.0
+Function        ImportSystemModules
+Function        In                                                 3.4.0
+Function        Initialize-Disk                                    2.0.0.0
+Function        InModuleScope                                      3.4.0
+Function        Install-Dtc                                        1.0.0.0
+Function        Install-Module                                     1.0.0.1
+Function        Install-Script                                     1.0.0.1
+Function        Install-WUUpdates                                  1.0.0.2
+Function        Invoke-AsWorkflow                                  1.0.0.0
+Function        Invoke-Mock                                        3.4.0
+Function        Invoke-OperationValidation                         1.0.1
+Function        Invoke-Pester                                      3.4.0
+Function        It                                                 3.4.0
+Function        J:
+Function        K:
+Function        L:
+Function        Lock-BitLocker                                     1.0.0.0
+Function        M:
+Function        mkdir
+Function        Mock                                               3.4.0
+Function        more
+Function        Mount-DiskImage                                    2.0.0.0
+Function        Move-SmbWitnessClient                              2.0.0.0
+Function        N:
+Function        New-AutologgerConfig                               1.0.0.0
+Function        New-DAEntryPointTableItem                          1.0.0.0
+Function        New-DscChecksum                                    1.1
+Function        New-EapConfiguration                               2.0.0.0
+Function        New-EtwTraceSession                                1.0.0.0
+Function        New-FileShare                                      2.0.0.0
+Function        New-Fixture                                        3.4.0
+Function        New-Guid                                           3.1.0.0
+Function        New-IscsiTargetPortal                              1.0.0.0
+Function        New-IseSnippet                                     1.0.0.0
+Function        New-MaskingSet                                     2.0.0.0
+Function        New-NetAdapterAdvancedProperty                     2.0.0.0
+Function        New-NetEventSession                                1.0.0.0
+Function        New-NetFirewallRule                                2.0.0.0
+Function        New-NetIPAddress                                   1.0.0.0
+Function        New-NetIPHttpsConfiguration                        1.0.0.0
+Function        New-NetIPsecDospSetting                            2.0.0.0
+Function        New-NetIPsecMainModeCryptoSet                      2.0.0.0
+Function        New-NetIPsecMainModeRule                           2.0.0.0
+Function        New-NetIPsecPhase1AuthSet                          2.0.0.0
+Function        New-NetIPsecPhase2AuthSet                          2.0.0.0
+Function        New-NetIPsecQuickModeCryptoSet                     2.0.0.0
+Function        New-NetIPsecRule                                   2.0.0.0
+Function        New-NetLbfoTeam                                    2.0.0.0
+Function        New-NetNat                                         1.0.0.0
+Function        New-NetNatTransitionConfiguration                  1.0.0.0
+Function        New-NetNeighbor                                    1.0.0.0
+Function        New-NetQosPolicy                                   2.0.0.0
+Function        New-NetRoute                                       1.0.0.0
+Function        New-NetSwitchTeam                                  1.0.0.0
+Function        New-NetTransportFilter                             1.0.0.0
+Function        New-NetworkSwitchVlan                              1.0.0.0
+Function        New-Partition                                      2.0.0.0
+Function        New-PesterOption                                   3.4.0
+Function        New-PSWorkflowSession                              2.0.0.0
+Function        New-ScheduledTask                                  1.0.0.0
+Function        New-ScheduledTaskAction                            1.0.0.0
+Function        New-ScheduledTaskPrincipal                         1.0.0.0
+Function        New-ScheduledTaskSettingsSet                       1.0.0.0
+Function        New-ScheduledTaskTrigger                           1.0.0.0
+Function        New-ScriptFileInfo                                 1.0.0.1
+Function        New-SmbGlobalMapping                               2.0.0.0
+Function        New-SmbMapping                                     2.0.0.0
+Function        New-SmbMultichannelConstraint                      2.0.0.0
+Function        New-SmbShare                                       2.0.0.0
+Function        New-StorageBusBinding                              1.0.0.0
+Function        New-StorageBusCacheStore                           1.0.0.0
+Function        New-StorageFileServer                              2.0.0.0
+Function        New-StoragePool                                    2.0.0.0
+Function        New-StorageSubsystemVirtualDisk                    2.0.0.0
+Function        New-StorageTier                                    2.0.0.0
+Function        New-TemporaryFile                                  3.1.0.0
+Function        New-VirtualDisk                                    2.0.0.0
+Function        New-VirtualDiskClone                               2.0.0.0
+Function        New-VirtualDiskSnapshot                            2.0.0.0
+Function        New-Volume                                         2.0.0.0
+Function        New-VpnServerAddress                               2.0.0.0
+Function        O:
+Function        Open-NetGPO                                        2.0.0.0
+Function        Optimize-StoragePool                               2.0.0.0
+Function        Optimize-Volume                                    2.0.0.0
+Function        oss
+Function        P:
+Function        Pause
+Function        prompt
+Function        PSConsoleHostReadLine                              2.0.0
+Function        Publish-Module                                     1.0.0.1
+Function        Publish-Script                                     1.0.0.1
+Function        Q:
+Function        R:
+Function        Read-PrinterNfcTag                                 1.1
+Function        Register-ClusteredScheduledTask                    1.0.0.0
+Function        Register-DnsClient                                 1.0.0.0
+Function        Register-IscsiSession                              1.0.0.0
+Function        Register-PSRepository                              1.0.0.1
+Function        Register-ScheduledTask                             1.0.0.0
+Function        Register-StorageSubsystem                          2.0.0.0
+Function        Remove-AutologgerConfig                            1.0.0.0
+Function        Remove-BitLockerKeyProtector                       1.0.0.0
+Function        Remove-DAEntryPointTableItem                       1.0.0.0
+Function        Remove-DnsClientNrptRule                           1.0.0.0
+Function        Remove-DscConfigurationDocument                    1.1
+Function        Remove-DtcClusterTMMapping                         1.0.0.0
+Function        Remove-EtwTraceProvider                            1.0.0.0
+Function        Remove-FileShare                                   2.0.0.0
+Function        Remove-InitiatorId                                 2.0.0.0
+Function        Remove-InitiatorIdFromMaskingSet                   2.0.0.0
+Function        Remove-IscsiTargetPortal                           1.0.0.0
+Function        Remove-MaskingSet                                  2.0.0.0
+Function        Remove-MpPreference                                1.0
+Function        Remove-MpThreat                                    1.0
+Function        Remove-NetAdapterAdvancedProperty                  2.0.0.0
+Function        Remove-NetEventNetworkAdapter                      1.0.0.0
+Function        Remove-NetEventPacketCaptureProvider               1.0.0.0
+Function        Remove-NetEventProvider                            1.0.0.0
+Function        Remove-NetEventSession                             1.0.0.0
+Function        Remove-NetEventVFPProvider                         1.0.0.0
+Function        Remove-NetEventVmNetworkAdapter                    1.0.0.0
+Function        Remove-NetEventVmSwitch                            1.0.0.0
+Function        Remove-NetEventVmSwitchProvider                    1.0.0.0
+Function        Remove-NetEventWFPCaptureProvider                  1.0.0.0
+Function        Remove-NetFirewallRule                             2.0.0.0
+Function        Remove-NetIPAddress                                1.0.0.0
+Function        Remove-NetIPHttpsCertBinding                       1.0.0.0
+Function        Remove-NetIPHttpsConfiguration                     1.0.0.0
+Function        Remove-NetIPsecDospSetting                         2.0.0.0
+Function        Remove-NetIPsecMainModeCryptoSet                   2.0.0.0
+Function        Remove-NetIPsecMainModeRule                        2.0.0.0
+Function        Remove-NetIPsecMainModeSA                          2.0.0.0
+Function        Remove-NetIPsecPhase1AuthSet                       2.0.0.0
+Function        Remove-NetIPsecPhase2AuthSet                       2.0.0.0
+Function        Remove-NetIPsecQuickModeCryptoSet                  2.0.0.0
+Function        Remove-NetIPsecQuickModeSA                         2.0.0.0
+Function        Remove-NetIPsecRule                                2.0.0.0
+Function        Remove-NetLbfoTeam                                 2.0.0.0
+Function        Remove-NetLbfoTeamMember                           2.0.0.0
+Function        Remove-NetLbfoTeamNic                              2.0.0.0
+Function        Remove-NetNat                                      1.0.0.0
+Function        Remove-NetNatExternalAddress                       1.0.0.0
+Function        Remove-NetNatStaticMapping                         1.0.0.0
+Function        Remove-NetNatTransitionConfiguration               1.0.0.0
+Function        Remove-NetNeighbor                                 1.0.0.0
+Function        Remove-NetQosPolicy                                2.0.0.0
+Function        Remove-NetRoute                                    1.0.0.0
+Function        Remove-NetSwitchTeam                               1.0.0.0
+Function        Remove-NetSwitchTeamMember                         1.0.0.0
+Function        Remove-NetTransportFilter                          1.0.0.0
+Function        Remove-NetworkSwitchEthernetPortIPAddress          1.0.0.0
+Function        Remove-NetworkSwitchVlan                           1.0.0.0
+Function        Remove-OdbcDsn                                     1.0.0.0
+Function        Remove-Partition                                   2.0.0.0
+Function        Remove-PartitionAccessPath                         2.0.0.0
+Function        Remove-PhysicalDisk                                2.0.0.0
+Function        Remove-Printer                                     1.1
+Function        Remove-PrinterDriver                               1.1
+Function        Remove-PrinterPort                                 1.1
+Function        Remove-PrintJob                                    1.1
+Function        Remove-SmbBandwidthLimit                           2.0.0.0
+Function        Remove-SmbGlobalMapping                            2.0.0.0
+Function        Remove-SmbMapping                                  2.0.0.0
+Function        Remove-SmbMultichannelConstraint                   2.0.0.0
+Function        Remove-SmbShare                                    2.0.0.0
+Function        Remove-StorageBusBinding                           1.0.0.0
+Function        Remove-StorageFaultDomain                          2.0.0.0
+Function        Remove-StorageFileServer                           2.0.0.0
+Function        Remove-StorageHealthIntent                         2.0.0.0
+Function        Remove-StorageHealthSetting                        2.0.0.0
+Function        Remove-StoragePool                                 2.0.0.0
+Function        Remove-StorageTier                                 2.0.0.0
+Function        Remove-TargetPortFromMaskingSet                    2.0.0.0
+Function        Remove-VirtualDisk                                 2.0.0.0
+Function        Remove-VirtualDiskFromMaskingSet                   2.0.0.0
+Function        Remove-VpnConnection                               2.0.0.0
+Function        Remove-VpnConnectionRoute                          2.0.0.0
+Function        Remove-VpnConnectionTriggerApplication             2.0.0.0
+Function        Remove-VpnConnectionTriggerDnsConfiguration        2.0.0.0
+Function        Remove-VpnConnectionTriggerTrustedNetwork          2.0.0.0
+Function        Rename-DAEntryPointTableItem                       1.0.0.0
+Function        Rename-MaskingSet                                  2.0.0.0
+Function        Rename-NetAdapter                                  2.0.0.0
+Function        Rename-NetFirewallRule                             2.0.0.0
+Function        Rename-NetIPHttpsConfiguration                     1.0.0.0
+Function        Rename-NetIPsecMainModeCryptoSet                   2.0.0.0
+Function        Rename-NetIPsecMainModeRule                        2.0.0.0
+Function        Rename-NetIPsecPhase1AuthSet                       2.0.0.0
+Function        Rename-NetIPsecPhase2AuthSet                       2.0.0.0
+Function        Rename-NetIPsecQuickModeCryptoSet                  2.0.0.0
+Function        Rename-NetIPsecRule                                2.0.0.0
+Function        Rename-NetLbfoTeam                                 2.0.0.0
+Function        Rename-NetSwitchTeam                               1.0.0.0
+Function        Rename-Printer                                     1.1
+Function        Repair-FileIntegrity                               2.0.0.0
+Function        Repair-VirtualDisk                                 2.0.0.0
+Function        Repair-Volume                                      2.0.0.0
+Function        Reset-DAClientExperienceConfiguration              1.0.0.0
+Function        Reset-DAEntryPointTableItem                        1.0.0.0
+Function        Reset-DtcLog                                       1.0.0.0
+Function        Reset-NCSIPolicyConfiguration                      1.0.0.0
+Function        Reset-Net6to4Configuration                         1.0.0.0
+Function        Reset-NetAdapterAdvancedProperty                   2.0.0.0
+Function        Reset-NetDnsTransitionConfiguration                1.0.0.0
+Function        Reset-NetIPHttpsConfiguration                      1.0.0.0
+Function        Reset-NetIsatapConfiguration                       1.0.0.0
+Function        Reset-NetTeredoConfiguration                       1.0.0.0
+Function        Reset-PhysicalDisk                                 2.0.0.0
+Function        Reset-StorageReliabilityCounter                    2.0.0.0
+Function        Resize-Partition                                   2.0.0.0
+Function        Resize-StorageTier                                 2.0.0.0
+Function        Resize-VirtualDisk                                 2.0.0.0
+Function        Restart-NetAdapter                                 2.0.0.0
+Function        Restart-PcsvDevice                                 1.0.0.0
+Function        Restart-PrintJob                                   1.1
+Function        Restore-DscConfiguration                           1.1
+Function        Restore-NetworkSwitchConfiguration                 1.0.0.0
+Function        Resume-BitLocker                                   1.0.0.0
+Function        Resume-PrintJob                                    1.1
+Function        Resume-StorageBusDisk                              1.0.0.0
+Function        Revoke-FileShareAccess                             2.0.0.0
+Function        Revoke-SmbShareAccess                              2.0.0.0
+Function        S:
+Function        SafeGetCommand                                     3.4.0
+Function        Save-EtwTraceSession                               1.0.0.0
+Function        Save-Module                                        1.0.0.1
+Function        Save-NetGPO                                        2.0.0.0
+Function        Save-NetworkSwitchConfiguration                    1.0.0.0
+Function        Save-Script                                        1.0.0.1
+Function        Send-EtwTraceSession                               1.0.0.0
+Function        Set-ClusteredScheduledTask                         1.0.0.0
+Function        Set-DAClientExperienceConfiguration                1.0.0.0
+Function        Set-DAEntryPointTableItem                          1.0.0.0
+Function        Set-Disk                                           2.0.0.0
+Function        Set-DnsClient                                      1.0.0.0
+Function        Set-DnsClientGlobalSetting                         1.0.0.0
+Function        Set-DnsClientNrptGlobal                            1.0.0.0
+Function        Set-DnsClientNrptRule                              1.0.0.0
+Function        Set-DnsClientServerAddress                         1.0.0.0
+Function        Set-DtcAdvancedHostSetting                         1.0.0.0
+Function        Set-DtcAdvancedSetting                             1.0.0.0
+Function        Set-DtcClusterDefault                              1.0.0.0
+Function        Set-DtcClusterTMMapping                            1.0.0.0
+Function        Set-DtcDefault                                     1.0.0.0
+Function        Set-DtcLog                                         1.0.0.0
+Function        Set-DtcNetworkSetting                              1.0.0.0
+Function        Set-DtcTransaction                                 1.0.0.0
+Function        Set-DtcTransactionsTraceSession                    1.0.0.0
+Function        Set-DtcTransactionsTraceSetting                    1.0.0.0
+Function        Set-DynamicParameterVariables                      3.4.0
+Function        Set-EtwTraceProvider                               1.0.0.0
+Function        Set-FileIntegrity                                  2.0.0.0
+Function        Set-FileShare                                      2.0.0.0
+Function        Set-FileStorageTier                                2.0.0.0
+Function        Set-InitiatorPort                                  2.0.0.0
+Function        Set-IscsiChapSecret                                1.0.0.0
+Function        Set-LogProperties                                  1.0.0.0
+Function        Set-MMAgent                                        1.0
+Function        Set-MpPreference                                   1.0
+Function        Set-NCSIPolicyConfiguration                        1.0.0.0
+Function        Set-Net6to4Configuration                           1.0.0.0
+Function        Set-NetAdapter                                     2.0.0.0
+Function        Set-NetAdapterAdvancedProperty                     2.0.0.0
+Function        Set-NetAdapterBinding                              2.0.0.0
+Function        Set-NetAdapterChecksumOffload                      2.0.0.0
+Function        Set-NetAdapterEncapsulatedPacketTaskOffload        2.0.0.0
+Function        Set-NetAdapterIPsecOffload                         2.0.0.0
+Function        Set-NetAdapterLso                                  2.0.0.0
+Function        Set-NetAdapterPacketDirect                         2.0.0.0
+Function        Set-NetAdapterPowerManagement                      2.0.0.0
+Function        Set-NetAdapterQos                                  2.0.0.0
+Function        Set-NetAdapterRdma                                 2.0.0.0
+Function        Set-NetAdapterRsc                                  2.0.0.0
+Function        Set-NetAdapterRss                                  2.0.0.0
+Function        Set-NetAdapterSriov                                2.0.0.0
+Function        Set-NetAdapterUso                                  2.0.0.0
+Function        Set-NetAdapterVmq                                  2.0.0.0
+Function        Set-NetConnectionProfile                           1.0.0.0
+Function        Set-NetDnsTransitionConfiguration                  1.0.0.0
+Function        Set-NetEventPacketCaptureProvider                  1.0.0.0
+Function        Set-NetEventProvider                               1.0.0.0
+Function        Set-NetEventSession                                1.0.0.0
+Function        Set-NetEventVFPProvider                            1.0.0.0
+Function        Set-NetEventVmSwitchProvider                       1.0.0.0
+Function        Set-NetEventWFPCaptureProvider                     1.0.0.0
+Function        Set-NetFirewallAddressFilter                       2.0.0.0
+Function        Set-NetFirewallApplicationFilter                   2.0.0.0
+Function        Set-NetFirewallInterfaceFilter                     2.0.0.0
+Function        Set-NetFirewallInterfaceTypeFilter                 2.0.0.0
+Function        Set-NetFirewallPortFilter                          2.0.0.0
+Function        Set-NetFirewallProfile                             2.0.0.0
+Function        Set-NetFirewallRule                                2.0.0.0
+Function        Set-NetFirewallSecurityFilter                      2.0.0.0
+Function        Set-NetFirewallServiceFilter                       2.0.0.0
+Function        Set-NetFirewallSetting                             2.0.0.0
+Function        Set-NetIPAddress                                   1.0.0.0
+Function        Set-NetIPHttpsConfiguration                        1.0.0.0
+Function        Set-NetIPInterface                                 1.0.0.0
+Function        Set-NetIPsecDospSetting                            2.0.0.0
+Function        Set-NetIPsecMainModeCryptoSet                      2.0.0.0
+Function        Set-NetIPsecMainModeRule                           2.0.0.0
+Function        Set-NetIPsecPhase1AuthSet                          2.0.0.0
+Function        Set-NetIPsecPhase2AuthSet                          2.0.0.0
+Function        Set-NetIPsecQuickModeCryptoSet                     2.0.0.0
+Function        Set-NetIPsecRule                                   2.0.0.0
+Function        Set-NetIPv4Protocol                                1.0.0.0
+Function        Set-NetIPv6Protocol                                1.0.0.0
+Function        Set-NetIsatapConfiguration                         1.0.0.0
+Function        Set-NetLbfoTeam                                    2.0.0.0
+Function        Set-NetLbfoTeamMember                              2.0.0.0
+Function        Set-NetLbfoTeamNic                                 2.0.0.0
+Function        Set-NetNat                                         1.0.0.0
+Function        Set-NetNatGlobal                                   1.0.0.0
+Function        Set-NetNatTransitionConfiguration                  1.0.0.0
+Function        Set-NetNeighbor                                    1.0.0.0
+Function        Set-NetOffloadGlobalSetting                        1.0.0.0
+Function        Set-NetQosPolicy                                   2.0.0.0
+Function        Set-NetRoute                                       1.0.0.0
+Function        Set-NetTCPSetting                                  1.0.0.0
+Function        Set-NetTeredoConfiguration                         1.0.0.0
+Function        Set-NetUDPSetting                                  1.0.0.0
+Function        Set-NetworkSwitchEthernetPortIPAddress             1.0.0.0
+Function        Set-NetworkSwitchPortMode                          1.0.0.0
+Function        Set-NetworkSwitchPortProperty                      1.0.0.0
+Function        Set-NetworkSwitchVlanProperty                      1.0.0.0
+Function        Set-OdbcDriver                                     1.0.0.0
+Function        Set-OdbcDsn                                        1.0.0.0
+Function        Set-Partition                                      2.0.0.0
+Function        Set-PcsvDeviceBootConfiguration                    1.0.0.0
+Function        Set-PcsvDeviceNetworkConfiguration                 1.0.0.0
+Function        Set-PcsvDeviceUserPassword                         1.0.0.0
+Function        Set-PhysicalDisk                                   2.0.0.0
+Function        Set-PrintConfiguration                             1.1
+Function        Set-Printer                                        1.1
+Function        Set-PrinterProperty                                1.1
+Function        Set-PSRepository                                   1.0.0.1
+Function        Set-ResiliencySetting                              2.0.0.0
+Function        Set-ScheduledTask                                  1.0.0.0
+Function        Set-SmbBandwidthLimit                              2.0.0.0
+Function        Set-SmbClientConfiguration                         2.0.0.0
+Function        Set-SmbPathAcl                                     2.0.0.0
+Function        Set-SmbServerConfiguration                         2.0.0.0
+Function        Set-SmbShare                                       2.0.0.0
+Function        Set-StorageBusProfile                              1.0.0.0
+Function        Set-StorageFileServer                              2.0.0.0
+Function        Set-StorageHealthSetting                           2.0.0.0
+Function        Set-StoragePool                                    2.0.0.0
+Function        Set-StorageProvider                                2.0.0.0
+Function        Set-StorageSetting                                 2.0.0.0
+Function        Set-StorageSubSystem                               2.0.0.0
+Function        Set-StorageTier                                    2.0.0.0
+Function        Set-TestInconclusive                               3.4.0
+Function        Setup                                              3.4.0
+Function        Set-VirtualDisk                                    2.0.0.0
+Function        Set-Volume                                         2.0.0.0
+Function        Set-VolumeScrubPolicy                              2.0.0.0
+Function        Set-VpnConnection                                  2.0.0.0
+Function        Set-VpnConnectionIPsecConfiguration                2.0.0.0
+Function        Set-VpnConnectionProxy                             2.0.0.0
+Function        Set-VpnConnectionTriggerDnsConfiguration           2.0.0.0
+Function        Set-VpnConnectionTriggerTrustedNetwork             2.0.0.0
+Function        Should                                             3.4.0
+Function        Show-NetFirewallRule                               2.0.0.0
+Function        Show-NetIPsecRule                                  2.0.0.0
+Function        Show-StorageHistory                                2.0.0.0
+Function        Show-VirtualDisk                                   2.0.0.0
+Function        Start-AppBackgroundTask                            1.0.0.0
+Function        Start-AutologgerConfig                             1.0.0.0
+Function        Start-Dtc                                          1.0.0.0
+Function        Start-DtcTransactionsTraceSession                  1.0.0.0
+Function        Start-EtwTraceSession                              1.0.0.0
+Function        Start-MpScan                                       1.0
+Function        Start-MpWDOScan                                    1.0
+Function        Start-NetEventSession                              1.0.0.0
+Function        Start-PcsvDevice                                   1.0.0.0
+Function        Start-ScheduledTask                                1.0.0.0
+Function        Start-StorageDiagnosticLog                         2.0.0.0
+Function        Start-Trace                                        1.0.0.0
+Function        Start-WUScan                                       1.0.0.2
+Function        Stop-DscConfiguration                              1.1
+Function        Stop-Dtc                                           1.0.0.0
+Function        Stop-DtcTransactionsTraceSession                   1.0.0.0
+Function        Stop-EtwTraceSession                               1.0.0.0
+Function        Stop-NetEventSession                               1.0.0.0
+Function        Stop-PcsvDevice                                    1.0.0.0
+Function        Stop-ScheduledTask                                 1.0.0.0
+Function        Stop-StorageDiagnosticLog                          2.0.0.0
+Function        Stop-StorageJob                                    2.0.0.0
+Function        Stop-Trace                                         1.0.0.0
+Function        Suspend-BitLocker                                  1.0.0.0
+Function        Suspend-PrintJob                                   1.1
+Function        Suspend-StorageBusDisk                             1.0.0.0
+Function        Sync-NetIPsecRule                                  2.0.0.0
+Function        T:
+Function        TabExpansion2
+Function        Test-Dtc                                           1.0.0.0
+Function        Test-NetConnection                                 1.0.0.0
+Function        Test-ScriptFileInfo                                1.0.0.1
+Function        U:
+Function        Unblock-FileShareAccess                            2.0.0.0
+Function        Unblock-SmbShareAccess                             2.0.0.0
+Function        Uninstall-Dtc                                      1.0.0.0
+Function        Uninstall-Module                                   1.0.0.1
+Function        Uninstall-Script                                   1.0.0.1
+Function        Unlock-BitLocker                                   1.0.0.0
+Function        Unregister-AppBackgroundTask                       1.0.0.0
+Function        Unregister-ClusteredScheduledTask                  1.0.0.0
+Function        Unregister-IscsiSession                            1.0.0.0
+Function        Unregister-PSRepository                            1.0.0.1
+Function        Unregister-ScheduledTask                           1.0.0.0
+Function        Unregister-StorageSubsystem                        2.0.0.0
+Function        Update-AutologgerConfig                            1.0.0.0
+Function        Update-Disk                                        2.0.0.0
+Function        Update-DscConfiguration                            1.1
+Function        Update-EtwTraceSession                             1.0.0.0
+Function        Update-HostStorageCache                            2.0.0.0
+Function        Update-IscsiTarget                                 1.0.0.0
+Function        Update-IscsiTargetPortal                           1.0.0.0
+Function        Update-Module                                      1.0.0.1
+Function        Update-ModuleManifest                              1.0.0.1
+Function        Update-MpSignature                                 1.0
+Function        Update-NetIPsecRule                                2.0.0.0
+Function        Update-Script                                      1.0.0.1
+Function        Update-ScriptFileInfo                              1.0.0.1
+Function        Update-SmbMultichannelConnection                   2.0.0.0
+Function        Update-StorageFirmware                             2.0.0.0
+Function        Update-StoragePool                                 2.0.0.0
+Function        Update-StorageProviderCache                        2.0.0.0
+Function        V:
+Function        W:
+Function        Write-DtcTransactionsTraceSession                  1.0.0.0
+Function        Write-PrinterNfcTag                                1.1
+Function        Write-VolumeCache                                  2.0.0.0
+Function        X:
+Function        Y:
+Function        Z:
+Cmdlet          Add-AppxPackage                                    2.0.1.0
+Cmdlet          Add-AppxProvisionedPackage                         3.0
+Cmdlet          Add-AppxVolume                                     2.0.1.0
+Cmdlet          Add-BitsFile                                       2.0.0.0
+Cmdlet          Add-CertificateEnrollmentPolicyServer              1.0.0.0
+Cmdlet          Add-Computer                                       3.1.0.0
+Cmdlet          Add-Content                                        3.1.0.0
+Cmdlet          Add-History                                        3.0.0.0
+Cmdlet          Add-JobTrigger                                     1.1.0.0
+Cmdlet          Add-KdsRootKey                                     1.0.0.0
+Cmdlet          Add-LocalGroupMember                               1.0.0.0
+Cmdlet          Add-Member                                         3.1.0.0
+Cmdlet          Add-PSSnapin                                       3.0.0.0
+Cmdlet          Add-Type                                           3.1.0.0
+Cmdlet          Add-WindowsCapability                              3.0
+Cmdlet          Add-WindowsDriver                                  3.0
+Cmdlet          Add-WindowsImage                                   3.0
+Cmdlet          Add-WindowsPackage                                 3.0
+Cmdlet          Checkpoint-Computer                                3.1.0.0
+Cmdlet          Clear-Content                                      3.1.0.0
+Cmdlet          Clear-EventLog                                     3.1.0.0
+Cmdlet          Clear-History                                      3.0.0.0
+Cmdlet          Clear-Item                                         3.1.0.0
+Cmdlet          Clear-ItemProperty                                 3.1.0.0
+Cmdlet          Clear-KdsCache                                     1.0.0.0
+Cmdlet          Clear-RecycleBin                                   3.1.0.0
+Cmdlet          Clear-Tpm                                          2.0.0.0
+Cmdlet          Clear-Variable                                     3.1.0.0
+Cmdlet          Clear-WindowsCorruptMountPoint                     3.0
+Cmdlet          Compare-Object                                     3.1.0.0
+Cmdlet          Complete-BitsTransfer                              2.0.0.0
+Cmdlet          Complete-DtcDiagnosticTransaction                  1.0.0.0
+Cmdlet          Complete-Transaction                               3.1.0.0
+Cmdlet          Confirm-SecureBootUEFI                             2.0.0.0
+Cmdlet          Connect-PSSession                                  3.0.0.0
+Cmdlet          Connect-WSMan                                      3.0.0.0
+Cmdlet          ConvertFrom-Csv                                    3.1.0.0
+Cmdlet          ConvertFrom-Json                                   3.1.0.0
+Cmdlet          ConvertFrom-SecureString                           3.0.0.0
+Cmdlet          ConvertFrom-String                                 3.1.0.0
+Cmdlet          ConvertFrom-StringData                             3.1.0.0
+Cmdlet          Convert-Path                                       3.1.0.0
+Cmdlet          Convert-String                                     3.1.0.0
+Cmdlet          ConvertTo-Csv                                      3.1.0.0
+Cmdlet          ConvertTo-Html                                     3.1.0.0
+Cmdlet          ConvertTo-Json                                     3.1.0.0
+Cmdlet          ConvertTo-ProcessMitigationPolicy                  1.0.11
+Cmdlet          ConvertTo-SecureString                             3.0.0.0
+Cmdlet          ConvertTo-TpmOwnerAuth                             2.0.0.0
+Cmdlet          ConvertTo-Xml                                      3.1.0.0
+Cmdlet          Copy-Item                                          3.1.0.0
+Cmdlet          Copy-ItemProperty                                  3.1.0.0
+Cmdlet          Debug-Job                                          3.0.0.0
+Cmdlet          Debug-Process                                      3.1.0.0
+Cmdlet          Debug-Runspace                                     3.1.0.0
+Cmdlet          Delete-DeliveryOptimizationCache                   1.0.2.0
+Cmdlet          Disable-AppBackgroundTaskDiagnosticLog             1.0.0.0
+Cmdlet          Disable-ComputerRestore                            3.1.0.0
+Cmdlet          Disable-JobTrigger                                 1.1.0.0
+Cmdlet          Disable-LocalUser                                  1.0.0.0
+Cmdlet          Disable-PSBreakpoint                               3.1.0.0
+Cmdlet          Disable-PSRemoting                                 3.0.0.0
+Cmdlet          Disable-PSSessionConfiguration                     3.0.0.0
+Cmdlet          Disable-RunspaceDebug                              3.1.0.0
+Cmdlet          Disable-ScheduledJob                               1.1.0.0
+Cmdlet          Disable-TlsCipherSuite                             2.0.0.0
+Cmdlet          Disable-TlsEccCurve                                2.0.0.0
+Cmdlet          Disable-TlsSessionTicketKey                        2.0.0.0
+Cmdlet          Disable-TpmAutoProvisioning                        2.0.0.0
+Cmdlet          Disable-WindowsErrorReporting                      1.0
+Cmdlet          Disable-WindowsOptionalFeature                     3.0
+Cmdlet          Disable-WSManCredSSP                               3.0.0.0
+Cmdlet          Disconnect-PSSession                               3.0.0.0
+Cmdlet          Disconnect-WSMan                                   3.0.0.0
+Cmdlet          Dismount-AppxVolume                                2.0.1.0
+Cmdlet          Dismount-WindowsImage                              3.0
+Cmdlet          Enable-AppBackgroundTaskDiagnosticLog              1.0.0.0
+Cmdlet          Enable-ComputerRestore                             3.1.0.0
+Cmdlet          Enable-JobTrigger                                  1.1.0.0
+Cmdlet          Enable-LocalUser                                   1.0.0.0
+Cmdlet          Enable-PSBreakpoint                                3.1.0.0
+Cmdlet          Enable-PSRemoting                                  3.0.0.0
+Cmdlet          Enable-PSSessionConfiguration                      3.0.0.0
+Cmdlet          Enable-RunspaceDebug                               3.1.0.0
+Cmdlet          Enable-ScheduledJob                                1.1.0.0
+Cmdlet          Enable-TlsCipherSuite                              2.0.0.0
+Cmdlet          Enable-TlsEccCurve                                 2.0.0.0
+Cmdlet          Enable-TlsSessionTicketKey                         2.0.0.0
+Cmdlet          Enable-TpmAutoProvisioning                         2.0.0.0
+Cmdlet          Enable-WindowsErrorReporting                       1.0
+Cmdlet          Enable-WindowsOptionalFeature                      3.0
+Cmdlet          Enable-WSManCredSSP                                3.0.0.0
+Cmdlet          Enter-PSHostProcess                                3.0.0.0
+Cmdlet          Enter-PSSession                                    3.0.0.0
+Cmdlet          Exit-PSHostProcess                                 3.0.0.0
+Cmdlet          Exit-PSSession                                     3.0.0.0
+Cmdlet          Expand-WindowsCustomDataImage                      3.0
+Cmdlet          Expand-WindowsImage                                3.0
+Cmdlet          Export-Alias                                       3.1.0.0
+Cmdlet          Export-BinaryMiLog                                 1.0.0.0
+Cmdlet          Export-Certificate                                 1.0.0.0
+Cmdlet          Export-Clixml                                      3.1.0.0
+Cmdlet          Export-Console                                     3.0.0.0
+Cmdlet          Export-Counter                                     3.0.0.0
+Cmdlet          Export-Csv                                         3.1.0.0
+Cmdlet          Export-FormatData                                  3.1.0.0
+Cmdlet          Export-ModuleMember                                3.0.0.0
+Cmdlet          Export-PfxCertificate                              1.0.0.0
+Cmdlet          Export-ProvisioningPackage                         3.0
+Cmdlet          Export-PSSession                                   3.1.0.0
+Cmdlet          Export-StartLayout                                 1.0.0.0
+Cmdlet          Export-StartLayoutEdgeAssets                       1.0.0.0
+Cmdlet          Export-TlsSessionTicketKey                         2.0.0.0
+Cmdlet          Export-Trace                                       3.0
+Cmdlet          Export-WindowsCapabilitySource                     3.0
+Cmdlet          Export-WindowsDriver                               3.0
+Cmdlet          Export-WindowsImage                                3.0
+Cmdlet          Find-Package                                       1.0.0.1
+Cmdlet          Find-PackageProvider                               1.0.0.1
+Cmdlet          ForEach-Object                                     3.0.0.0
+Cmdlet          Format-Custom                                      3.1.0.0
+Cmdlet          Format-List                                        3.1.0.0
+Cmdlet          Format-SecureBootUEFI                              2.0.0.0
+Cmdlet          Format-Table                                       3.1.0.0
+Cmdlet          Format-Wide                                        3.1.0.0
+Cmdlet          Get-Acl                                            3.0.0.0
+Cmdlet          Get-Alias                                          3.1.0.0
+Cmdlet          Get-AppxDefaultVolume                              2.0.1.0
+Cmdlet          Get-AppxPackage                                    2.0.1.0
+Cmdlet          Get-AppxPackageManifest                            2.0.1.0
+Cmdlet          Get-AppxProvisionedPackage                         3.0
+Cmdlet          Get-AppxVolume                                     2.0.1.0
+Cmdlet          Get-AuthenticodeSignature                          3.0.0.0
+Cmdlet          Get-BitsTransfer                                   2.0.0.0
+Cmdlet          Get-Certificate                                    1.0.0.0
+Cmdlet          Get-CertificateAutoEnrollmentPolicy                1.0.0.0
+Cmdlet          Get-CertificateEnrollmentPolicyServer              1.0.0.0
+Cmdlet          Get-CertificateNotificationTask                    1.0.0.0
+Cmdlet          Get-ChildItem                                      3.1.0.0
+Cmdlet          Get-CimAssociatedInstance                          1.0.0.0
+Cmdlet          Get-CimClass                                       1.0.0.0
+Cmdlet          Get-CimInstance                                    1.0.0.0
+Cmdlet          Get-CimSession                                     1.0.0.0
+Cmdlet          Get-Clipboard                                      3.1.0.0
+Cmdlet          Get-CmsMessage                                     3.0.0.0
+Cmdlet          Get-Command                                        3.0.0.0
+Cmdlet          Get-ComputerInfo                                   3.1.0.0
+Cmdlet          Get-ComputerRestorePoint                           3.1.0.0
+Cmdlet          Get-Content                                        3.1.0.0
+Cmdlet          Get-ControlPanelItem                               3.1.0.0
+Cmdlet          Get-Counter                                        3.0.0.0
+Cmdlet          Get-Credential                                     3.0.0.0
+Cmdlet          Get-Culture                                        3.1.0.0
+Cmdlet          Get-DAPolicyChange                                 2.0.0.0
+Cmdlet          Get-Date                                           3.1.0.0
+Cmdlet          Get-DeliveryOptimizationLog                        1.0.2.0
+Cmdlet          Get-DeliveryOptimizationPerfSnap                   1.0.2.0
+Cmdlet          Get-DeliveryOptimizationPerfSnapThisMonth          1.0.2.0
+Cmdlet          Get-DeliveryOptimizationStatus                     1.0.2.0
+Cmdlet          Get-DOConfig                                       1.0.2.0
+Cmdlet          Get-DODownloadMode                                 1.0.2.0
+Cmdlet          Get-DOPercentageMaxBackgroundBandwidth             1.0.2.0
+Cmdlet          Get-DOPercentageMaxForegroundBandwidth             1.0.2.0
+Cmdlet          Get-Event                                          3.1.0.0
+Cmdlet          Get-EventLog                                       3.1.0.0
+Cmdlet          Get-EventSubscriber                                3.1.0.0
+Cmdlet          Get-ExecutionPolicy                                3.0.0.0
+Cmdlet          Get-FormatData                                     3.1.0.0
+Cmdlet          Get-Help                                           3.0.0.0
+Cmdlet          Get-History                                        3.0.0.0
+Cmdlet          Get-Host                                           3.1.0.0
+Cmdlet          Get-HotFix                                         3.1.0.0
+Cmdlet          Get-Item                                           3.1.0.0
+Cmdlet          Get-ItemProperty                                   3.1.0.0
+Cmdlet          Get-ItemPropertyValue                              3.1.0.0
+Cmdlet          Get-Job                                            3.0.0.0
+Cmdlet          Get-JobTrigger                                     1.1.0.0
+Cmdlet          Get-KdsConfiguration                               1.0.0.0
+Cmdlet          Get-KdsRootKey                                     1.0.0.0
+Cmdlet          Get-LocalGroup                                     1.0.0.0
+Cmdlet          Get-LocalGroupMember                               1.0.0.0
+Cmdlet          Get-LocalUser                                      1.0.0.0
+Cmdlet          Get-Location                                       3.1.0.0
+Cmdlet          Get-Member                                         3.1.0.0
+Cmdlet          Get-Module                                         3.0.0.0
+Cmdlet          Get-NonRemovableAppsPolicy                         3.0
+Cmdlet          Get-Package                                        1.0.0.1
+Cmdlet          Get-PackageProvider                                1.0.0.1
+Cmdlet          Get-PackageSource                                  1.0.0.1
+Cmdlet          Get-PfxCertificate                                 3.0.0.0
+Cmdlet          Get-PfxData                                        1.0.0.0
+Cmdlet          Get-PmemDisk                                       1.0.0.0
+Cmdlet          Get-PmemPhysicalDevice                             1.0.0.0
+Cmdlet          Get-PmemUnusedRegion                               1.0.0.0
+Cmdlet          Get-Process                                        3.1.0.0
+Cmdlet          Get-ProcessMitigation                              1.0.11
+Cmdlet          Get-ProvisioningPackage                            3.0
+Cmdlet          Get-PSBreakpoint                                   3.1.0.0
+Cmdlet          Get-PSCallStack                                    3.1.0.0
+Cmdlet          Get-PSDrive                                        3.1.0.0
+Cmdlet          Get-PSHostProcessInfo                              3.0.0.0
+Cmdlet          Get-PSProvider                                     3.1.0.0
+Cmdlet          Get-PSReadLineKeyHandler                           2.0.0
+Cmdlet          Get-PSReadLineOption                               2.0.0
+Cmdlet          Get-PSSession                                      3.0.0.0
+Cmdlet          Get-PSSessionCapability                            3.0.0.0
+Cmdlet          Get-PSSessionConfiguration                         3.0.0.0
+Cmdlet          Get-PSSnapin                                       3.0.0.0
+Cmdlet          Get-Random                                         3.1.0.0
+Cmdlet          Get-Runspace                                       3.1.0.0
+Cmdlet          Get-RunspaceDebug                                  3.1.0.0
+Cmdlet          Get-ScheduledJob                                   1.1.0.0
+Cmdlet          Get-ScheduledJobOption                             1.1.0.0
+Cmdlet          Get-SecureBootPolicy                               2.0.0.0
+Cmdlet          Get-SecureBootUEFI                                 2.0.0.0
+Cmdlet          Get-Service                                        3.1.0.0
+Cmdlet          Get-TimeZone                                       3.1.0.0
+Cmdlet          Get-TlsCipherSuite                                 2.0.0.0
+Cmdlet          Get-TlsEccCurve                                    2.0.0.0
+Cmdlet          Get-Tpm                                            2.0.0.0
+Cmdlet          Get-TpmEndorsementKeyInfo                          2.0.0.0
+Cmdlet          Get-TpmSupportedFeature                            2.0.0.0
+Cmdlet          Get-TraceSource                                    3.1.0.0
+Cmdlet          Get-Transaction                                    3.1.0.0
+Cmdlet          Get-TroubleshootingPack                            1.0.0.0
+Cmdlet          Get-TrustedProvisioningCertificate                 3.0
+Cmdlet          Get-TypeData                                       3.1.0.0
+Cmdlet          Get-UICulture                                      3.1.0.0
+Cmdlet          Get-Unique                                         3.1.0.0
+Cmdlet          Get-Variable                                       3.1.0.0
+Cmdlet          Get-WheaMemoryPolicy                               2.0.0.0
+Cmdlet          Get-WIMBootEntry                                   3.0
+Cmdlet          Get-WinAcceptLanguageFromLanguageListOptOut        2.0.0.0
+Cmdlet          Get-WinCultureFromLanguageListOptOut               2.0.0.0
+Cmdlet          Get-WinDefaultInputMethodOverride                  2.0.0.0
+Cmdlet          Get-WindowsCapability                              3.0
+Cmdlet          Get-WindowsDeveloperLicense                        1.0.0.0
+Cmdlet          Get-WindowsDriver                                  3.0
+Cmdlet          Get-WindowsEdition                                 3.0
+Cmdlet          Get-WindowsErrorReporting                          1.0
+Cmdlet          Get-WindowsImage                                   3.0
+Cmdlet          Get-WindowsImageContent                            3.0
+Cmdlet          Get-WindowsOptionalFeature                         3.0
+Cmdlet          Get-WindowsPackage                                 3.0
+Cmdlet          Get-WindowsSearchSetting                           1.0.0.0
+Cmdlet          Get-WinEvent                                       3.0.0.0
+Cmdlet          Get-WinHomeLocation                                2.0.0.0
+Cmdlet          Get-WinLanguageBarOption                           2.0.0.0
+Cmdlet          Get-WinSystemLocale                                2.0.0.0
+Cmdlet          Get-WinUILanguageOverride                          2.0.0.0
+Cmdlet          Get-WinUserLanguageList                            2.0.0.0
+Cmdlet          Get-WmiObject                                      3.1.0.0
+Cmdlet          Get-WSManCredSSP                                   3.0.0.0
+Cmdlet          Get-WSManInstance                                  3.0.0.0
+Cmdlet          Group-Object                                       3.1.0.0
+Cmdlet          Import-Alias                                       3.1.0.0
+Cmdlet          Import-BinaryMiLog                                 1.0.0.0
+Cmdlet          Import-Certificate                                 1.0.0.0
+Cmdlet          Import-Clixml                                      3.1.0.0
+Cmdlet          Import-Counter                                     3.0.0.0
+Cmdlet          Import-Csv                                         3.1.0.0
+Cmdlet          Import-LocalizedData                               3.1.0.0
+Cmdlet          Import-Module                                      3.0.0.0
+Cmdlet          Import-PackageProvider                             1.0.0.1
+Cmdlet          Import-PfxCertificate                              1.0.0.0
+Cmdlet          Import-PSSession                                   3.1.0.0
+Cmdlet          Import-StartLayout                                 1.0.0.0
+Cmdlet          Import-TpmOwnerAuth                                2.0.0.0
+Cmdlet          Initialize-PmemPhysicalDevice                      1.0.0.0
+Cmdlet          Initialize-Tpm                                     2.0.0.0
+Cmdlet          Install-Package                                    1.0.0.1
+Cmdlet          Install-PackageProvider                            1.0.0.1
+Cmdlet          Install-ProvisioningPackage                        3.0
+Cmdlet          Install-TrustedProvisioningCertificate             3.0
+Cmdlet          Invoke-CimMethod                                   1.0.0.0
+Cmdlet          Invoke-Command                                     3.0.0.0
+Cmdlet          Invoke-CommandInDesktopPackage                     2.0.1.0
+Cmdlet          Invoke-DscResource                                 1.1
+Cmdlet          Invoke-Expression                                  3.1.0.0
+Cmdlet          Invoke-History                                     3.0.0.0
+Cmdlet          Invoke-Item                                        3.1.0.0
+Cmdlet          Invoke-RestMethod                                  3.1.0.0
+Cmdlet          Invoke-TroubleshootingPack                         1.0.0.0
+Cmdlet          Invoke-WebRequest                                  3.1.0.0
+Cmdlet          Invoke-WmiMethod                                   3.1.0.0
+Cmdlet          Invoke-WSManAction                                 3.0.0.0
+Cmdlet          Join-DtcDiagnosticResourceManager                  1.0.0.0
+Cmdlet          Join-Path                                          3.1.0.0
+Cmdlet          Limit-EventLog                                     3.1.0.0
+Cmdlet          Measure-Command                                    3.1.0.0
+Cmdlet          Measure-Object                                     3.1.0.0
+Cmdlet          Mount-AppxVolume                                   2.0.1.0
+Cmdlet          Mount-WindowsImage                                 3.0
+Cmdlet          Move-AppxPackage                                   2.0.1.0
+Cmdlet          Move-Item                                          3.1.0.0
+Cmdlet          Move-ItemProperty                                  3.1.0.0
+Cmdlet          New-Alias                                          3.1.0.0
+Cmdlet          New-CertificateNotificationTask                    1.0.0.0
+Cmdlet          New-CimInstance                                    1.0.0.0
+Cmdlet          New-CimSession                                     1.0.0.0
+Cmdlet          New-CimSessionOption                               1.0.0.0
+Cmdlet          New-DtcDiagnosticTransaction                       1.0.0.0
+Cmdlet          New-Event                                          3.1.0.0
+Cmdlet          New-EventLog                                       3.1.0.0
+Cmdlet          New-FileCatalog                                    3.0.0.0
+Cmdlet          New-Item                                           3.1.0.0
+Cmdlet          New-ItemProperty                                   3.1.0.0
+Cmdlet          New-JobTrigger                                     1.1.0.0
+Cmdlet          New-LocalGroup                                     1.0.0.0
+Cmdlet          New-LocalUser                                      1.0.0.0
+Cmdlet          New-Module                                         3.0.0.0
+Cmdlet          New-ModuleManifest                                 3.0.0.0
+Cmdlet          New-NetIPsecAuthProposal                           2.0.0.0
+Cmdlet          New-NetIPsecMainModeCryptoProposal                 2.0.0.0
+Cmdlet          New-NetIPsecQuickModeCryptoProposal                2.0.0.0
+Cmdlet          New-Object                                         3.1.0.0
+Cmdlet          New-PmemDisk                                       1.0.0.0
+Cmdlet          New-ProvisioningRepro                              3.0
+Cmdlet          New-PSDrive                                        3.1.0.0
+Cmdlet          New-PSRoleCapabilityFile                           3.0.0.0
+Cmdlet          New-PSSession                                      3.0.0.0
+Cmdlet          New-PSSessionConfigurationFile                     3.0.0.0
+Cmdlet          New-PSSessionOption                                3.0.0.0
+Cmdlet          New-PSTransportOption                              3.0.0.0
+Cmdlet          New-PSWorkflowExecutionOption                      2.0.0.0
+Cmdlet          New-ScheduledJobOption                             1.1.0.0
+Cmdlet          New-SelfSignedCertificate                          1.0.0.0
+Cmdlet          New-Service                                        3.1.0.0
+Cmdlet          New-TimeSpan                                       3.1.0.0
+Cmdlet          New-TlsSessionTicketKey                            2.0.0.0
+Cmdlet          New-Variable                                       3.1.0.0
+Cmdlet          New-WebServiceProxy                                3.1.0.0
+Cmdlet          New-WindowsCustomImage                             3.0
+Cmdlet          New-WindowsImage                                   3.0
+Cmdlet          New-WinEvent                                       3.0.0.0
+Cmdlet          New-WinUserLanguageList                            2.0.0.0
+Cmdlet          New-WSManInstance                                  3.0.0.0
+Cmdlet          New-WSManSessionOption                             3.0.0.0
+Cmdlet          Optimize-AppxProvisionedPackages                   3.0
+Cmdlet          Optimize-WindowsImage                              3.0
+Cmdlet          Out-Default                                        3.0.0.0
+Cmdlet          Out-File                                           3.1.0.0
+Cmdlet          Out-GridView                                       3.1.0.0
+Cmdlet          Out-Host                                           3.0.0.0
+Cmdlet          Out-Null                                           3.0.0.0
+Cmdlet          Out-Printer                                        3.1.0.0
+Cmdlet          Out-String                                         3.1.0.0
+Cmdlet          Pop-Location                                       3.1.0.0
+Cmdlet          Protect-CmsMessage                                 3.0.0.0
+Cmdlet          Publish-DscConfiguration                           1.1
+Cmdlet          Push-Location                                      3.1.0.0
+Cmdlet          Read-Host                                          3.1.0.0
+Cmdlet          Receive-DtcDiagnosticTransaction                   1.0.0.0
+Cmdlet          Receive-Job                                        3.0.0.0
+Cmdlet          Receive-PSSession                                  3.0.0.0
+Cmdlet          Register-ArgumentCompleter                         3.0.0.0
+Cmdlet          Register-CimIndicationEvent                        1.0.0.0
+Cmdlet          Register-EngineEvent                               3.1.0.0
+Cmdlet          Register-ObjectEvent                               3.1.0.0
+Cmdlet          Register-PackageSource                             1.0.0.1
+Cmdlet          Register-PSSessionConfiguration                    3.0.0.0
+Cmdlet          Register-ScheduledJob                              1.1.0.0
+Cmdlet          Register-WmiEvent                                  3.1.0.0
+Cmdlet          Remove-AppxPackage                                 2.0.1.0
+Cmdlet          Remove-AppxProvisionedPackage                      3.0
+Cmdlet          Remove-AppxVolume                                  2.0.1.0
+Cmdlet          Remove-BitsTransfer                                2.0.0.0
+Cmdlet          Remove-CertificateEnrollmentPolicyServer           1.0.0.0
+Cmdlet          Remove-CertificateNotificationTask                 1.0.0.0
+Cmdlet          Remove-CimInstance                                 1.0.0.0
+Cmdlet          Remove-CimSession                                  1.0.0.0
+Cmdlet          Remove-Computer                                    3.1.0.0
+Cmdlet          Remove-Event                                       3.1.0.0
+Cmdlet          Remove-EventLog                                    3.1.0.0
+Cmdlet          Remove-Item                                        3.1.0.0
+Cmdlet          Remove-ItemProperty                                3.1.0.0
+Cmdlet          Remove-Job                                         3.0.0.0
+Cmdlet          Remove-JobTrigger                                  1.1.0.0
+Cmdlet          Remove-LocalGroup                                  1.0.0.0
+Cmdlet          Remove-LocalGroupMember                            1.0.0.0
+Cmdlet          Remove-LocalUser                                   1.0.0.0
+Cmdlet          Remove-Module                                      3.0.0.0
+Cmdlet          Remove-PmemDisk                                    1.0.0.0
+Cmdlet          Remove-PSBreakpoint                                3.1.0.0
+Cmdlet          Remove-PSDrive                                     3.1.0.0
+Cmdlet          Remove-PSReadLineKeyHandler                        2.0.0
+Cmdlet          Remove-PSSession                                   3.0.0.0
+Cmdlet          Remove-PSSnapin                                    3.0.0.0
+Cmdlet          Remove-TypeData                                    3.1.0.0
+Cmdlet          Remove-Variable                                    3.1.0.0
+Cmdlet          Remove-WindowsCapability                           3.0
+Cmdlet          Remove-WindowsDriver                               3.0
+Cmdlet          Remove-WindowsImage                                3.0
+Cmdlet          Remove-WindowsPackage                              3.0
+Cmdlet          Remove-WmiObject                                   3.1.0.0
+Cmdlet          Remove-WSManInstance                               3.0.0.0
+Cmdlet          Rename-Computer                                    3.1.0.0
+Cmdlet          Rename-Item                                        3.1.0.0
+Cmdlet          Rename-ItemProperty                                3.1.0.0
+Cmdlet          Rename-LocalGroup                                  1.0.0.0
+Cmdlet          Rename-LocalUser                                   1.0.0.0
+Cmdlet          Repair-WindowsImage                                3.0
+Cmdlet          Reset-ComputerMachinePassword                      3.1.0.0
+Cmdlet          Resolve-DnsName                                    1.0.0.0
+Cmdlet          Resolve-Path                                       3.1.0.0
+Cmdlet          Restart-Computer                                   3.1.0.0
+Cmdlet          Restart-Service                                    3.1.0.0
+Cmdlet          Restore-Computer                                   3.1.0.0
+Cmdlet          Resume-BitsTransfer                                2.0.0.0
+Cmdlet          Resume-Job                                         3.0.0.0
+Cmdlet          Resume-ProvisioningSession                         3.0
+Cmdlet          Resume-Service                                     3.1.0.0
+Cmdlet          Save-Help                                          3.0.0.0
+Cmdlet          Save-Package                                       1.0.0.1
+Cmdlet          Save-WindowsImage                                  3.0
+Cmdlet          Select-Object                                      3.1.0.0
+Cmdlet          Select-String                                      3.1.0.0
+Cmdlet          Select-Xml                                         3.1.0.0
+Cmdlet          Send-DtcDiagnosticTransaction                      1.0.0.0
+Cmdlet          Send-MailMessage                                   3.1.0.0
+Cmdlet          Set-Acl                                            3.0.0.0
+Cmdlet          Set-Alias                                          3.1.0.0
+Cmdlet          Set-AppBackgroundTaskResourcePolicy                1.0.0.0
+Cmdlet          Set-AppxDefaultVolume                              2.0.1.0
+Cmdlet          Set-AppXProvisionedDataFile                        3.0
+Cmdlet          Set-AuthenticodeSignature                          3.0.0.0
+Cmdlet          Set-BitsTransfer                                   2.0.0.0
+Cmdlet          Set-CertificateAutoEnrollmentPolicy                1.0.0.0
+Cmdlet          Set-CimInstance                                    1.0.0.0
+Cmdlet          Set-Clipboard                                      3.1.0.0
+Cmdlet          Set-Content                                        3.1.0.0
+Cmdlet          Set-Culture                                        2.0.0.0
+Cmdlet          Set-Date                                           3.1.0.0
+Cmdlet          Set-DeliveryOptimizationStatus                     1.0.2.0
+Cmdlet          Set-DODownloadMode                                 1.0.2.0
+Cmdlet          Set-DOPercentageMaxBackgroundBandwidth             1.0.2.0
+Cmdlet          Set-DOPercentageMaxForegroundBandwidth             1.0.2.0
+Cmdlet          Set-DscLocalConfigurationManager                   1.1
+Cmdlet          Set-ExecutionPolicy                                3.0.0.0
+Cmdlet          Set-Item                                           3.1.0.0
+Cmdlet          Set-ItemProperty                                   3.1.0.0
+Cmdlet          Set-JobTrigger                                     1.1.0.0
+Cmdlet          Set-KdsConfiguration                               1.0.0.0
+Cmdlet          Set-LocalGroup                                     1.0.0.0
+Cmdlet          Set-LocalUser                                      1.0.0.0
+Cmdlet          Set-Location                                       3.1.0.0
+Cmdlet          Set-NonRemovableAppsPolicy                         3.0
+Cmdlet          Set-PackageSource                                  1.0.0.1
+Cmdlet          Set-ProcessMitigation                              1.0.11
+Cmdlet          Set-PSBreakpoint                                   3.1.0.0
+Cmdlet          Set-PSDebug                                        3.0.0.0
+Cmdlet          Set-PSReadLineKeyHandler                           2.0.0
+Cmdlet          Set-PSReadLineOption                               2.0.0
+Cmdlet          Set-PSSessionConfiguration                         3.0.0.0
+Cmdlet          Set-ScheduledJob                                   1.1.0.0
+Cmdlet          Set-ScheduledJobOption                             1.1.0.0
+Cmdlet          Set-SecureBootUEFI                                 2.0.0.0
+Cmdlet          Set-Service                                        3.1.0.0
+Cmdlet          Set-StrictMode                                     3.0.0.0
+Cmdlet          Set-TimeZone                                       3.1.0.0
+Cmdlet          Set-TpmOwnerAuth                                   2.0.0.0
+Cmdlet          Set-TraceSource                                    3.1.0.0
+Cmdlet          Set-Variable                                       3.1.0.0
+Cmdlet          Set-WheaMemoryPolicy                               2.0.0.0
+Cmdlet          Set-WinAcceptLanguageFromLanguageListOptOut        2.0.0.0
+Cmdlet          Set-WinCultureFromLanguageListOptOut               2.0.0.0
+Cmdlet          Set-WinDefaultInputMethodOverride                  2.0.0.0
+Cmdlet          Set-WindowsEdition                                 3.0
+Cmdlet          Set-WindowsProductKey                              3.0
+Cmdlet          Set-WindowsSearchSetting                           1.0.0.0
+Cmdlet          Set-WinHomeLocation                                2.0.0.0
+Cmdlet          Set-WinLanguageBarOption                           2.0.0.0
+Cmdlet          Set-WinSystemLocale                                2.0.0.0
+Cmdlet          Set-WinUILanguageOverride                          2.0.0.0
+Cmdlet          Set-WinUserLanguageList                            2.0.0.0
+Cmdlet          Set-WmiInstance                                    3.1.0.0
+Cmdlet          Set-WSManInstance                                  3.0.0.0
+Cmdlet          Set-WSManQuickConfig                               3.0.0.0
+Cmdlet          Show-Command                                       3.1.0.0
+Cmdlet          Show-ControlPanelItem                              3.1.0.0
+Cmdlet          Show-EventLog                                      3.1.0.0
+Cmdlet          Show-WindowsDeveloperLicenseRegistration           1.0.0.0
+Cmdlet          Sort-Object                                        3.1.0.0
+Cmdlet          Split-Path                                         3.1.0.0
+Cmdlet          Split-WindowsImage                                 3.0
+Cmdlet          Start-BitsTransfer                                 2.0.0.0
+Cmdlet          Start-DscConfiguration                             1.1
+Cmdlet          Start-DtcDiagnosticResourceManager                 1.0.0.0
+Cmdlet          Start-Job                                          3.0.0.0
+Cmdlet          Start-OSUninstall                                  3.0
+Cmdlet          Start-Process                                      3.1.0.0
+Cmdlet          Start-Service                                      3.1.0.0
+Cmdlet          Start-Sleep                                        3.1.0.0
+Cmdlet          Start-Transaction                                  3.1.0.0
+Cmdlet          Start-Transcript                                   3.0.0.0
+Cmdlet          Stop-Computer                                      3.1.0.0
+Cmdlet          Stop-DtcDiagnosticResourceManager                  1.0.0.0
+Cmdlet          Stop-Job                                           3.0.0.0
+Cmdlet          Stop-Process                                       3.1.0.0
+Cmdlet          Stop-Service                                       3.1.0.0
+Cmdlet          Stop-Transcript                                    3.0.0.0
+Cmdlet          Suspend-BitsTransfer                               2.0.0.0
+Cmdlet          Suspend-Job                                        3.0.0.0
+Cmdlet          Suspend-Service                                    3.1.0.0
+Cmdlet          Switch-Certificate                                 1.0.0.0
+Cmdlet          Tee-Object                                         3.1.0.0
+Cmdlet          Test-Certificate                                   1.0.0.0
+Cmdlet          Test-ComputerSecureChannel                         3.1.0.0
+Cmdlet          Test-Connection                                    3.1.0.0
+Cmdlet          Test-DscConfiguration                              1.1
+Cmdlet          Test-FileCatalog                                   3.0.0.0
+Cmdlet          Test-KdsRootKey                                    1.0.0.0
+Cmdlet          Test-ModuleManifest                                3.0.0.0
+Cmdlet          Test-Path                                          3.1.0.0
+Cmdlet          Test-PSSessionConfigurationFile                    3.0.0.0
+Cmdlet          Test-WSMan                                         3.0.0.0
+Cmdlet          Trace-Command                                      3.1.0.0
+Cmdlet          Unblock-File                                       3.1.0.0
+Cmdlet          Unblock-Tpm                                        2.0.0.0
+Cmdlet          Undo-DtcDiagnosticTransaction                      1.0.0.0
+Cmdlet          Undo-Transaction                                   3.1.0.0
+Cmdlet          Uninstall-Package                                  1.0.0.1
+Cmdlet          Uninstall-ProvisioningPackage                      3.0
+Cmdlet          Uninstall-TrustedProvisioningCertificate           3.0
+Cmdlet          Unprotect-CmsMessage                               3.0.0.0
+Cmdlet          Unregister-Event                                   3.1.0.0
+Cmdlet          Unregister-PackageSource                           1.0.0.1
+Cmdlet          Unregister-PSSessionConfiguration                  3.0.0.0
+Cmdlet          Unregister-ScheduledJob                            1.1.0.0
+Cmdlet          Unregister-WindowsDeveloperLicense                 1.0.0.0
+Cmdlet          Update-FormatData                                  3.1.0.0
+Cmdlet          Update-Help                                        3.0.0.0
+Cmdlet          Update-List                                        3.1.0.0
+Cmdlet          Update-TypeData                                    3.1.0.0
+Cmdlet          Update-WIMBootEntry                                3.0
+Cmdlet          Use-Transaction                                    3.1.0.0
+Cmdlet          Use-WindowsUnattend                                3.0
+Cmdlet          Wait-Debugger                                      3.1.0.0
+Cmdlet          Wait-Event                                         3.1.0.0
+Cmdlet          Wait-Job                                           3.0.0.0
+Cmdlet          Wait-Process                                       3.1.0.0
+Cmdlet          Where-Object                                       3.0.0.0
+Cmdlet          Write-Debug                                        3.1.0.0
+Cmdlet          Write-Error                                        3.1.0.0
+Cmdlet          Write-EventLog                                     3.1.0.0
+Cmdlet          Write-Host                                         3.1.0.0
+Cmdlet          Write-Information                                  3.1.0.0
+Cmdlet          Write-Output                                       3.1.0.0
+Cmdlet          Write-Progress                                     3.1.0.0
+Cmdlet          Write-Verbose                                      3.1.0.0
+Cmdlet          Write-Warning                                      3.1.0.0
+
+
+PS C:\Users\ryanm> gal
+
+CommandType     Name                                               Version
+-----------     ----                                               -------
+Alias           % -> ForEach-Object
+Alias           ? -> Where-Object
+Alias           ac -> Add-Content
+Alias           asnp -> Add-PSSnapin
+Alias           cat -> Get-Content
+Alias           cd -> Set-Location
+Alias           CFS -> ConvertFrom-String                          3.1.0.0
+Alias           chdir -> Set-Location
+Alias           clc -> Clear-Content
+Alias           clear -> Clear-Host
+Alias           clhy -> Clear-History
+Alias           cli -> Clear-Item
+Alias           clp -> Clear-ItemProperty
+Alias           cls -> Clear-Host
+Alias           clv -> Clear-Variable
+Alias           cnsn -> Connect-PSSession
+Alias           compare -> Compare-Object
+Alias           copy -> Copy-Item
+Alias           cp -> Copy-Item
+Alias           cpi -> Copy-Item
+Alias           cpp -> Copy-ItemProperty
+Alias           curl -> Invoke-WebRequest
+Alias           cvpa -> Convert-Path
+Alias           dbp -> Disable-PSBreakpoint
+Alias           del -> Remove-Item
+Alias           diff -> Compare-Object
+Alias           dir -> Get-ChildItem
+Alias           dnsn -> Disconnect-PSSession
+Alias           ebp -> Enable-PSBreakpoint
+Alias           echo -> Write-Output
+Alias           epal -> Export-Alias
+Alias           epcsv -> Export-Csv
+Alias           epsn -> Export-PSSession
+Alias           erase -> Remove-Item
+Alias           etsn -> Enter-PSSession
+Alias           exsn -> Exit-PSSession
+Alias           fc -> Format-Custom
+Alias           fhx -> Format-Hex                                  3.1.0.0
+Alias           fl -> Format-List
+Alias           foreach -> ForEach-Object
+Alias           ft -> Format-Table
+Alias           fw -> Format-Wide
+Alias           gal -> Get-Alias
+Alias           gbp -> Get-PSBreakpoint
+Alias           gc -> Get-Content
+Alias           gcb -> Get-Clipboard                               3.1.0.0
+Alias           gci -> Get-ChildItem
+Alias           gcm -> Get-Command
+Alias           gcs -> Get-PSCallStack
+Alias           gdr -> Get-PSDrive
+Alias           ghy -> Get-History
+Alias           gi -> Get-Item
+Alias           gin -> Get-ComputerInfo                            3.1.0.0
+Alias           gjb -> Get-Job
+Alias           gl -> Get-Location
+Alias           gm -> Get-Member
+Alias           gmo -> Get-Module
+Alias           gp -> Get-ItemProperty
+Alias           gps -> Get-Process
+Alias           gpv -> Get-ItemPropertyValue
+Alias           group -> Group-Object
+Alias           gsn -> Get-PSSession
+Alias           gsnp -> Get-PSSnapin
+Alias           gsv -> Get-Service
+Alias           gtz -> Get-TimeZone                                3.1.0.0
+Alias           gu -> Get-Unique
+Alias           gv -> Get-Variable
+Alias           gwmi -> Get-WmiObject
+Alias           h -> Get-History
+Alias           history -> Get-History
+Alias           icm -> Invoke-Command
+Alias           iex -> Invoke-Expression
+Alias           ihy -> Invoke-History
+Alias           ii -> Invoke-Item
+Alias           ipal -> Import-Alias
+Alias           ipcsv -> Import-Csv
+Alias           ipmo -> Import-Module
+Alias           ipsn -> Import-PSSession
+Alias           irm -> Invoke-RestMethod
+Alias           ise -> powershell_ise.exe
+Alias           iwmi -> Invoke-WmiMethod
+Alias           iwr -> Invoke-WebRequest
+Alias           kill -> Stop-Process
+Alias           lp -> Out-Printer
+Alias           ls -> Get-ChildItem
+Alias           man -> help
+Alias           md -> mkdir
+Alias           measure -> Measure-Object
+Alias           mi -> Move-Item
+Alias           mount -> New-PSDrive
+Alias           move -> Move-Item
+Alias           mp -> Move-ItemProperty
+Alias           mv -> Move-Item
+Alias           nal -> New-Alias
+Alias           ndr -> New-PSDrive
+Alias           ni -> New-Item
+Alias           nmo -> New-Module
+Alias           npssc -> New-PSSessionConfigurationFile
+Alias           nsn -> New-PSSession
+Alias           nv -> New-Variable
+Alias           ogv -> Out-GridView
+Alias           oh -> Out-Host
+Alias           popd -> Pop-Location
+Alias           ps -> Get-Process
+Alias           pushd -> Push-Location
+Alias           pwd -> Get-Location
+Alias           r -> Invoke-History
+Alias           rbp -> Remove-PSBreakpoint
+Alias           rcjb -> Receive-Job
+Alias           rcsn -> Receive-PSSession
+Alias           rd -> Remove-Item
+Alias           rdr -> Remove-PSDrive
+Alias           ren -> Rename-Item
+Alias           ri -> Remove-Item
+Alias           rjb -> Remove-Job
+Alias           rm -> Remove-Item
+Alias           rmdir -> Remove-Item
+Alias           rmo -> Remove-Module
+Alias           rni -> Rename-Item
+Alias           rnp -> Rename-ItemProperty
+Alias           rp -> Remove-ItemProperty
+Alias           rsn -> Remove-PSSession
+Alias           rsnp -> Remove-PSSnapin
+Alias           rujb -> Resume-Job
+Alias           rv -> Remove-Variable
+Alias           rvpa -> Resolve-Path
+Alias           rwmi -> Remove-WmiObject
+Alias           sajb -> Start-Job
+Alias           sal -> Set-Alias
+Alias           saps -> Start-Process
+Alias           sasv -> Start-Service
+Alias           sbp -> Set-PSBreakpoint
+Alias           sc -> Set-Content
+Alias           scb -> Set-Clipboard                               3.1.0.0
+Alias           select -> Select-Object
+Alias           set -> Set-Variable
+Alias           shcm -> Show-Command
+Alias           si -> Set-Item
+Alias           sl -> Set-Location
+Alias           sleep -> Start-Sleep
+Alias           sls -> Select-String
+Alias           sort -> Sort-Object
+Alias           sp -> Set-ItemProperty
+Alias           spjb -> Stop-Job
+Alias           spps -> Stop-Process
+Alias           spsv -> Stop-Service
+Alias           start -> Start-Process
+Alias           stz -> Set-TimeZone                                3.1.0.0
+Alias           sujb -> Suspend-Job
+Alias           sv -> Set-Variable
+Alias           swmi -> Set-WmiInstance
+Alias           tee -> Tee-Object
+Alias           trcm -> Trace-Command
+Alias           type -> Get-Content
+Alias           wget -> Invoke-WebRequest
+Alias           where -> Where-Object
+Alias           wjb -> Wait-Job
+Alias           write -> Write-Output
+
+
+PS C:\Users\ryanm> gal
+
+CommandType     Name                                               Version
+-----------     ----                                               -------
+Alias           % -> ForEach-Object
+Alias           ? -> Where-Object
+Alias           ac -> Add-Content
+Alias           asnp -> Add-PSSnapin
+Alias           cat -> Get-Content
+Alias           cd -> Set-Location
+Alias           CFS -> ConvertFrom-String                          3.1.0.0
+Alias           chdir -> Set-Location
+Alias           clc -> Clear-Content
+Alias           clear -> Clear-Host
+Alias           clhy -> Clear-History
+Alias           cli -> Clear-Item
+Alias           clp -> Clear-ItemProperty
+Alias           cls -> Clear-Host
+Alias           clv -> Clear-Variable
+Alias           cnsn -> Connect-PSSession
+Alias           compare -> Compare-Object
+Alias           copy -> Copy-Item
+Alias           cp -> Copy-Item
+Alias           cpi -> Copy-Item
+Alias           cpp -> Copy-ItemProperty
+Alias           curl -> Invoke-WebRequest
+Alias           cvpa -> Convert-Path
+Alias           dbp -> Disable-PSBreakpoint
+Alias           del -> Remove-Item
+Alias           diff -> Compare-Object
+Alias           dir -> Get-ChildItem
+Alias           dnsn -> Disconnect-PSSession
+Alias           ebp -> Enable-PSBreakpoint
+Alias           echo -> Write-Output
+Alias           epal -> Export-Alias
+Alias           epcsv -> Export-Csv
+Alias           epsn -> Export-PSSession
+Alias           erase -> Remove-Item
+Alias           etsn -> Enter-PSSession
+Alias           exsn -> Exit-PSSession
+Alias           fc -> Format-Custom
+Alias           fhx -> Format-Hex                                  3.1.0.0
+Alias           fl -> Format-List
+Alias           foreach -> ForEach-Object
+Alias           ft -> Format-Table
+Alias           fw -> Format-Wide
+Alias           gal -> Get-Alias
+Alias           gbp -> Get-PSBreakpoint
+Alias           gc -> Get-Content
+Alias           gcb -> Get-Clipboard                               3.1.0.0
+Alias           gci -> Get-ChildItem
+Alias           gcm -> Get-Command
+Alias           gcs -> Get-PSCallStack
+Alias           gdr -> Get-PSDrive
+Alias           ghy -> Get-History
+Alias           gi -> Get-Item
+Alias           gin -> Get-ComputerInfo                            3.1.0.0
+Alias           gjb -> Get-Job
+Alias           gl -> Get-Location
+Alias           gm -> Get-Member
+Alias           gmo -> Get-Module
+Alias           gp -> Get-ItemProperty
+Alias           gps -> Get-Process
+Alias           gpv -> Get-ItemPropertyValue
+Alias           group -> Group-Object
+Alias           gsn -> Get-PSSession
+Alias           gsnp -> Get-PSSnapin
+Alias           gsv -> Get-Service
+Alias           gtz -> Get-TimeZone                                3.1.0.0
+Alias           gu -> Get-Unique
+Alias           gv -> Get-Variable
+Alias           gwmi -> Get-WmiObject
+Alias           h -> Get-History
+Alias           history -> Get-History
+Alias           icm -> Invoke-Command
+Alias           iex -> Invoke-Expression
+Alias           ihy -> Invoke-History
+Alias           ii -> Invoke-Item
+Alias           ipal -> Import-Alias
+Alias           ipcsv -> Import-Csv
+Alias           ipmo -> Import-Module
+Alias           ipsn -> Import-PSSession
+Alias           irm -> Invoke-RestMethod
+Alias           ise -> powershell_ise.exe
+Alias           iwmi -> Invoke-WmiMethod
+Alias           iwr -> Invoke-WebRequest
+Alias           kill -> Stop-Process
+Alias           lp -> Out-Printer
+Alias           ls -> Get-ChildItem
+Alias           man -> help
+Alias           md -> mkdir
+Alias           measure -> Measure-Object
+Alias           mi -> Move-Item
+Alias           mount -> New-PSDrive
+Alias           move -> Move-Item
+Alias           mp -> Move-ItemProperty
+Alias           mv -> Move-Item
+Alias           nal -> New-Alias
+Alias           ndr -> New-PSDrive
+Alias           ni -> New-Item
+Alias           nmo -> New-Module
+Alias           npssc -> New-PSSessionConfigurationFile
+Alias           nsn -> New-PSSession
+Alias           nv -> New-Variable
+Alias           ogv -> Out-GridView
+Alias           oh -> Out-Host
+Alias           popd -> Pop-Location
+Alias           ps -> Get-Process
+Alias           pushd -> Push-Location
+Alias           pwd -> Get-Location
+Alias           r -> Invoke-History
+Alias           rbp -> Remove-PSBreakpoint
+Alias           rcjb -> Receive-Job
+Alias           rcsn -> Receive-PSSession
+Alias           rd -> Remove-Item
+Alias           rdr -> Remove-PSDrive
+Alias           ren -> Rename-Item
+Alias           ri -> Remove-Item
+Alias           rjb -> Remove-Job
+Alias           rm -> Remove-Item
+Alias           rmdir -> Remove-Item
+Alias           rmo -> Remove-Module
+Alias           rni -> Rename-Item
+Alias           rnp -> Rename-ItemProperty
+Alias           rp -> Remove-ItemProperty
+Alias           rsn -> Remove-PSSession
+Alias           rsnp -> Remove-PSSnapin
+Alias           rujb -> Resume-Job
+Alias           rv -> Remove-Variable
+Alias           rvpa -> Resolve-Path
+Alias           rwmi -> Remove-WmiObject
+Alias           sajb -> Start-Job
+Alias           sal -> Set-Alias
+Alias           saps -> Start-Process
+Alias           sasv -> Start-Service
+Alias           sbp -> Set-PSBreakpoint
+Alias           sc -> Set-Content
+Alias           scb -> Set-Clipboard                               3.1.0.0
+Alias           select -> Select-Object
+Alias           set -> Set-Variable
+Alias           shcm -> Show-Command
+Alias           si -> Set-Item
+Alias           sl -> Set-Location
+Alias           sleep -> Start-Sleep
+Alias           sls -> Select-String
+Alias           sort -> Sort-Object
+Alias           sp -> Set-ItemProperty
+Alias           spjb -> Stop-Job
+Alias           spps -> Stop-Process
+Alias           spsv -> Stop-Service
+Alias           start -> Start-Process
+Alias           stz -> Set-TimeZone                                3.1.0.0
+Alias           sujb -> Suspend-Job
+Alias           sv -> Set-Variable
+Alias           swmi -> Set-WmiInstance
+Alias           tee -> Tee-Object
+Alias           trcm -> Trace-Command
+Alias           type -> Get-Content
+Alias           wget -> Invoke-WebRequest
+Alias           where -> Where-Object
+Alias           wjb -> Wait-Job
+Alias           write -> Write-Output
+
+
+PS C:\Users\ryanm> get-history
+
+  Id CommandLine
+  -- -----------
+   1 help
+   2 elp
+   3 help
+   4 get-help
+   5 get-help > pshelp
+   6 get-help > pshelp.txt
+   7 cd
+   8 list
+   9 cd ..
+  10 cd ryanm
+  11 notepad pshelp.txt
+  12 clear
+  13 help.exe
+  14 history
+  15 history.exe
+  16 clear
+  17 help.exe
+  18 help.txt > help.exe
+  19 history
+  20 help.exe > exe-help.txt
+  21 exe-help.txt
+  22 notepad exe-help.txt
+  23 rm exe-help.txt
+  24 clear
+  25 help.exe
+  26 history
+  27 help.exe > doshelp.txt
+  28 notepad doshelp.txta
+  29 notepad doshelp.txt
+  30 help help
+  31 help mkdir
+  32 mkdir deleteme
+  33 cd deleteme
+  34 cd .
+  35 cd
+  36 .
+  37 ..
+  38 cd ..
+  39 cd .\deleteme\
+  40 cd ..
+  41 cd .\deleteme\
+  42 help
+  43 help start transcript
+  44 help Start transcript
+  45 Start-Transcript -OutputDirectory .
+  46 Stop-Transcript
+  47 Start-Transcript -OutputDirectory C:\Users\ryanm\deleteme\
+  48 help getcmd
+  49 help get
+  50 help get command
+  51 help getcmd
+  52 help get cmd
+  53 help getcmd
+  54 get
+  55 get cmd
+  56 clear
+  57 help get
+  58 get-cmd
+  59 get-command
+  60 pwd
+  61 cd
+  62 get-help
+  63 get-history
+  64 gal
+  65 get-host
+  66 gal
+  67 Stop-Transcript
+  68 dir
+  69 notepad PowerShell_transcript.LAPTOP-MPFVM1B3.Vn1R_4n3.20200113105044...
+  70 note .\PowerShell_transcript.LAPTOP-MPFVM1B3.Vn1R_4n3.20200113105044.txt
+  71 notepad .\PowerShell_transcript.LAPTOP-MPFVM1B3.Vn1R_4n3.202001131050...
+  72 ks
+  73 ls
+  74 pwd
+  75 ls -ahFl
+  76 ls -ah
+  77 -ls
+  78 ls
+  79 ls -f
+  80 ls -a
+  81 Stop-Transcript
+  82 get-history
+  83 get-cmd
+  84 get-help
+  85 history
+  86 notepad .\PowerShell_transcript.LAPTOP-MPFVM1B3.Vn1R_4n3.202001131050...
+  87 dir
+  88 notepad ..
+  89 ..
+  90 cd ..
+  91 rm deleteme
+  92 clear
+  93 mkdir deleteme
+  94 start-transcript -outputdirectory C:\Users\ryanm\
+  95 get-cmd
+  96 get-command
+  97 gal
+  98 gal
+
+
+PS C:\Users\ryanm> stop-transcript
+**********************
+Windows PowerShell transcript end
+End time: 20200113111334
+**********************

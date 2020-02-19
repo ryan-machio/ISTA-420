@@ -1,0 +1,28 @@
+.echo on
+.headers on
+
+--Ryan Manchanthasouk
+--ex03.sql
+--February 18th, 2020
+
+CREATE TABLE US_Presidents (
+ID integer primary key,
+last_name text,
+first_name text,
+middle_name text,
+order_of_presidency integer,
+dob date,
+dod date,
+pob text,
+stateofbirth text,
+home_state text,
+arty_affil text,
+date_took_office date,
+date_left_office date,
+assissination_attempt text,
+assassinated text,
+religious_affil text,
+image imagepath
+);
+
+INSERT INTO US_Presidents values (ID integer primary key, last_name text, first_name text, middle_name text, order_of_presidency integer, dob date, dod date, pob text, stateofbirth text, home_state text, party_affil text, date_took_office date, date_left_office date, assissination_attempt text, assassinatedtext, religious_affil text, image imagepath)
